@@ -18,16 +18,26 @@ namespace Methods
 {
     internal class Program
     {
+        // void : 반환 할 타입이 없다
         static void Main(string[] args)
         {
             int sum = Sum(1, 2);
             Console.WriteLine(sum);
         }
+
         static int Sum(int a, int b)
         { 
             return a + b;
         }
 
+        static void SayHello()
+        {
+            return;
+            Console.WriteLine("Hi");
+            Console.WriteLine("Hello");
+            Console.WriteLine("How r u ?");
+            return; // void 반환 함수에서 마지막 return 은 생략 가능하다.
+        }
 
     }
 }
