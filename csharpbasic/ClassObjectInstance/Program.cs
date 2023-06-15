@@ -7,13 +7,21 @@ namespace ClassObjectInstance
 {
     internal class Program
     {
+        // class : 객체를 정의하는 타입
+        // object : class 타입에 따라 할당된 메모리영역
+        // instance : object 인데 데이터가 초기화되었을 경우   instance가 object에 포함된다
+        // C# 에서는 instance가 아닌 object는 없음 (생성자 호출시 전부 초기화 하기 때문에)
+
+
+        // static : 정적 키워드
+        // 객체참조를 통해 접근할 수 없다는 것을 명시하는 키워드
+        // (객체참조를 통해 접근할 수 없다는 것을 명시하는 키워드)
         static void Main(string[] args)
         {
-             static void Main(string[] args)
-             {
+
                     // 지역변수
                     // 특정 지역 내에서만 사용되는 변수 (일반적으로 함수, 접근자 내에서)
-                    int num;
+                    int num = 1;
                     //Console.WriteLine(num);
                     
                     // new 키워드
@@ -22,14 +30,22 @@ namespace ClassObjectInstance
                     Human human1 = new Human();
                     Human human2 = new Human();
 
-                    human1.name = "luka";
-                    human2.name = "kari";
+                    // instance 멤버는 instance 참조에 . 연산자를 사용
+                    human1.name = "Luka";
+                    human2.name = "Kari";
                     human1.SayName();
-                    human2.SayName();   
+                    human2.SayName();
+
+                    // static 멤버는 class타입에 . 연산자를 사용
+                    Human human3 = Human.Create("Jason");
+                    human3.SayName(); 
+
               
                     // . 멤버 접근 연산자
+                    // Console console = new Console();
+                    // console.WriteLine(human1.age);
                     Console.WriteLine(human1.age);
-             }
+             
 
         }
     }
@@ -54,6 +70,7 @@ namespace ClassObjectInstance
     // internal - 동일 어셈블리내에서 접근 가능
     class Human
     {
+        public static int s_dnaID = 1241232;
         public int age = 1;
         private float height;
         private double weight;
@@ -79,7 +96,18 @@ namespace ClassObjectInstance
         }
 
 
+        // Human 의 static (정적) 멤버 함수
+        public static Human Create(string name) 
+        {
+            Human human = new Human();
+            human.name = name; 
+            return human;
 
+        }
+
+
+
+        // Human instance 의 멤버 함수
          public void SayName()
          {
             // this 키워드
