@@ -9,12 +9,19 @@ namespace HorseRace
     internal class Horese
     {
         public string name;
+
+        public bool GoalIn;
+        public int dIstance;
         public float distance;
+        double GoalLIne = 200.0f;
+        bool GameEnd = false;
+
         private Random random = new Random();
 
         public void Run() 
         {
             distance += (1.0f + random.NextSingle()) * 10.0f;
         }
+
     }
 }
