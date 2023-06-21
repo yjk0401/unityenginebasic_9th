@@ -27,6 +27,8 @@
             string userInput = string.Empty;
             DisplayMap();
 
+           
+
             while (map[goaly, goalx] != 5)
             {
                 userInput = Console.ReadLine();
@@ -37,7 +39,12 @@
                 else if (userInput == "D") { MoveDown(); }
                 else Console.WriteLine("잘못된 입력입니다.");
             }
-            DisplayMap();
+
+            if (map[5, 4] == 5)
+            {
+                Console.WriteLine("goal_in");
+            }
+
         }
 
         static void DisplayMap() 
@@ -53,14 +60,16 @@
                     else if (map[i, j] == 2)
                         Console.Write("☆");
                     else if (map[i, j] == 5)
-                        Console.Write("▣");
+                        Console.Write("웃");
                 }
                 Console.WriteLine();
             }
         
         }
 
-        static void MoveRight() 
+
+
+    static void MoveRight() 
         {
             // 맵의 경계를 벗어나는지 체크
             if (x >= map.GetLength(1) - 1)
@@ -87,7 +96,7 @@
                 Console.WriteLine("해당 방향으로 움직일 수 없습니다. 맵의 경계를 벗어납니다.");
                 return;
             }
-            if (map[y, x + 1] == 1)
+            if (map[y, x - 1] == 1)
             {
                 Console.WriteLine("해당 방향은 막혀있습니다.");
                 return;
@@ -106,7 +115,7 @@
                 Console.WriteLine("해당 방향으로 움직일 수 없습니다. 맵의 경계를 벗어납니다.");
                 return;
             }
-            if (map[y + 1, x] == 1)
+            if (map[y - 1, x] == 1)
             {
                 Console.WriteLine("해당 방향은 막혀있습니다.");
                 return;

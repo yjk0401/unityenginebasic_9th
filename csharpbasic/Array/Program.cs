@@ -17,7 +17,7 @@ namespace Array
             int[] intArr = new int[3];
             intArr = new int[3] { 1, 2, 3 };
 
-            int[] intArr2 = {1, 2 , 3};
+            int[] intArr2 = { 1, 2 , 3 };
 
             // 인덱서 []
             // 인덱서 접근용 연산자
