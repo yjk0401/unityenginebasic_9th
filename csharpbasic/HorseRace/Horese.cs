@@ -10,11 +10,9 @@ namespace HorseRace
     {
         public string name;
 
-        public bool GoalIn;
         public int dIstance;
         public float distance;
-        double GoalLIne = 200.0f;
-        bool GameEnd = false;
+
 
         private Random random = new Random();
 
