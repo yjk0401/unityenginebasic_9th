@@ -1,9 +1,36 @@
-﻿namespace Inheritance
+﻿using System.Security.Cryptography;
+
+namespace Inheritance
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Knight knight = new Knight();
+            knight.hp = 10;
+            HpBar knightHpBar = new HpBar();
+
+            knight.onHpChanged += knightHpBar.Refresh;
+            knight.onHpChanged += knightHpBar.Refresh;
+            knight.onHpChanged += knightHpBar.Refresh;
+            knight.onHpChanged += knightHpBar.Refresh;
+            //knight.onHpChanged = knightHpBar.Refresh;
+            knight.onHpChanged += (value) =>
+            {
+                Console.WriteLine(value);
+            };
+            // 람다식 표현
+            // 컴파일러가 알아서 유추할 수 있는 내용을 모두 지운 뒤, => 이 기호로 람다식이라는 명사만 해주면 됌.
+
+
+            while (true)
+            {
+                knight.hp -= 1;
+                Thread.Sleep(100);
+            }
+
+
+
             //Creature creature1 = new Creature(); // 추상클래스는 인스턴스화 불가능
             //creature1.Breath();
 
@@ -51,5 +78,7 @@
                     Console.WriteLine("전사 발견!");
             }
         }
+
+
     }
 }
