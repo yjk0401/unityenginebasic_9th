@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Inheritance
 {
     // 추상멤버를 가지고 있다 
-    //-> 해당 멤버를 가지는 클래스가 인스턴스화 가능하다면 해당 함수를 호출할 수 있어야하는데 모순이 생김.
-    //-> 추상멤버를 가지고 있으면, 클래스도 마찬가지로 추상 클래스여야 함.
+    // -> 해당 멤버를 가지는 클래스가 인스턴스화 가능하다면 해당 함수를 호출할 수 있어야하는데 모순이 생김.
+    // -> 추상멤버를 가지고 있으면, 클래스도 마찬가지로 추상 클래스여야 함.
     internal abstract class Character : Creature, IDamageable
     {
         // 프로퍼티
@@ -51,7 +51,6 @@ namespace Inheritance
         public event Action action1;
         public event Action<float> action2;
         public event Action<int, string> action3;
-
         public event Func<int> func1;
         public event Func<float, int> func2;
         public event Func<float, double, int> func3;
