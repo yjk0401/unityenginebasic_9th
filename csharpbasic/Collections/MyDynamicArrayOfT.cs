@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Collections
 {
-    internal class MyDynamicArray : IEnumerable
+    internal class MyDynamicArray<T> : IEnumerable<T>
     {
         private static int DEFAULT_SIZE = 1;
         public int Length => _Length;
@@ -73,6 +73,11 @@ namespace Collections
            {
                yield return _items[i];
            }
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }
