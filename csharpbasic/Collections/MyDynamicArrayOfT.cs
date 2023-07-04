@@ -18,6 +18,7 @@ namespace Collections
 
         /// <summary>
         ///  삽입 알고리즘
+        ///  일반적인 경우 0(1), 공간이 모자란 경우에는 0(N)
         /// </summary>
         /// <param name="item"></param>
 
@@ -34,6 +35,26 @@ namespace Collections
             _items[_Count++] = item;
         }
 
+        public T Find(Predicate<T> match) 
+        {
+            for (int i = 0; i < _Count; i++)
+            {
+                if (match.Invoke(_items[i]))
+                    return _items[i];
+            }
+            return default(T);
+        }
+
+        public MyDynamicArray<T> FindAll(Predicate<T> match)
+        {
+            MyDynamicArray<T> result = new MyDynamicArray<T>();
+            for (int i = 0; i < _Count; i++)
+            {
+                if (match.Invoke(_items[i]))
+                    result.Add(_items[i]);
+            }
+            return result;
+        }
         /// <summary>
         /// 탑색 알고리즘
         /// </summary>
@@ -48,7 +69,6 @@ namespace Collections
             }
             return -1;
         }
-
         /// <summary>
         /// 삭제 알고리즘
         /// </summary>
