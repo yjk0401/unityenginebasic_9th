@@ -67,6 +67,7 @@ namespace Collections
             intDA.Add(2);
             intDA.Add(5);
             intDA.Add(7);
+            Console.WriteLine(intDA[0]);
 
             IEnumerator<int> intDAEnum = intDA.GetEnumerator();
             while (intDAEnum.MoveNext())
@@ -108,6 +109,7 @@ namespace Collections
             List.Find(x => x > 1);
             List.Insert(0, 2);
             List.FindAll(x => x > 1);
+            Console.WriteLine(List[0]);
             #endregion
         }
     }
