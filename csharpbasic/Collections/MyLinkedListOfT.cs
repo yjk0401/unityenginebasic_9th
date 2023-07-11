@@ -23,6 +23,8 @@ namespace Collections
         public Node<T> Last => _last;
         private Node<T> _first, _last, _tmp;
 
+
+
         public void AddFirst(T value) 
         {
             _tmp = new Node<T>(value);
@@ -107,12 +109,30 @@ namespace Collections
 
         public bool Remove(T value) 
         {
-        
+            _tmp = new Node<T>(value);
+
+            if (_tmp.Prev == null)
+            {
+                _tmp.Next.Prev= _first;
+                _tmp = _first;
+            }
+
+            if (_tmp.Next == null)
+            {
+                _tmp.Prev.Next = _last;
+                _tmp = _last;
+            }
+
+            else
+            {
+                _tmp.Prev.Next = _tmp.Next;
+                _tmp.Next.Prev = _tmp.Prev;
+            }
         }
 
 
 
-public IEnumerator<T> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             throw new NotImplementedException();
         }
