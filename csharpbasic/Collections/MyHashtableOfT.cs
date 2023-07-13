@@ -8,10 +8,42 @@ namespace Collections
 {
     internal class MyHashtableOfT<TKey, TValue>
     {
+        public TValue this[TKey key] 
+        {
+            get 
+            {
+                int index = Hash(key);
+                for (int i = 0; i < buckets[index].Count; i++)
+                {
+                    if (Comparer<TKey>.Default.Compare(buckets[index][i].Key, key) == 0)
+                        return buckets[index][i].Value;
+                }
+                
+                throw new Exception($"[MyHashtble] : {key} is not exist");
+            }
+            set 
+            {
+                int index = Hash(key);
+                for (int i = 0; i < buckets[index].Count; i++)
+                {
+                    if (Comparer<TKey>.Default.Compare(buckets[index][i].Key, key) == 0)
+                        buckets[index][i] = new KeyValuePair(key, value);
+                }
+
+                throw new Exception($"[MyHashtble] : {key} is not exist");
+            }
+        }
+
         private struct KeyValuePair : IComparable<KeyValuePair>
         {
             public TKey Key;
             public TValue Value;
+
+            public KeyValuePair(TKey key, TValue value) 
+            {
+                Key = key;
+                Value = value;
+            }
 
             public int CompareTo(MyHashtableOfT<TKey, TValue>.KeyValuePair other) 
             {
@@ -37,8 +69,55 @@ namespace Collections
             int index = Hash(key);
             for (int i = 0; i < buckets[index].Count; i++)
             {
-                if (buckets[index][i].CompareTo(new KeyValuePair(key, value)))
+                if (Comparer<TKey>.Default.Compare(buckets[index][i].Key, key) == 0)
+                    throw new ArgumentException($"[MyHashtable] : {key} has already added");
             }
+
+            buckets[index].Add(new KeyValuePair(key, value));
+        }
+
+        public bool Contains(TKey key)
+        {
+            int index = Hash(key);
+            for (int i = 0; i < buckets[index].Count; i++)
+            {
+                if (Comparer<TKey>.Default.Compare(buckets[index][i].Key, key) == 0)
+                    return true;
+            }
+            return false;
+
+        }
+
+        public bool TryGetValue(TKey key, out TValue value) 
+        {
+            value = default(TValue);
+            int index = Hash(key);
+            for (int i = 0; i < buckets[index].Count; i++)
+            {
+                if (Comparer<TKey>.Default.Compare(buckets[index][i].Key, key) == 0) 
+                {
+                    value = buckets[index][i].Value;
+                    return true;
+                }
+ 
+            }
+            return false;
+        }
+
+        public bool Remove(TKey key)
+        {
+            int index = Hash(key);
+            for (int i = 0; i < buckets[index].Count; i++)
+            {
+                if (Comparer<TKey>.Default.Compare(buckets[index][i].Key, key) == 0) 
+                {
+                    buckets[index].RemoveAt(i);
+                    return true;
+                }
+
+                
+            }
+            return false;
         }
 
         public int Hash(TKey key) 
@@ -51,5 +130,7 @@ namespace Collections
             }
             return hashValue %= _capacity;
         }
+
+
     }
 }

@@ -111,6 +111,26 @@ namespace Collections
             List.FindAll(x => x > 1);
             Console.WriteLine(List[0]);
             #endregion
+
+            #region Hashtable
+
+            Hashtable ht = new Hashtable();
+            ht.Add(1, "점수");
+
+            Dictionary<string, int> dictionary1 = new Dictionary<string, int>();
+            if (dictionary1.TryGetValue("점수", out int grade)) 
+            {
+                Console.WriteLine("철수 점수 : " + grade);
+            }
+
+            MyHashtableOfT<string, int> dictionary2 = new MyHashtableOfT<string, int>(1000);
+            dictionary2.Add("철수", 40);
+            if (dictionary2.TryGetValue("철수",out grade))
+            {
+                Console.WriteLine("철수 점수 :" + grade);
+            }
+
+            #endregion
         }
     }
 }
