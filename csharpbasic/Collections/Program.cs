@@ -131,6 +131,18 @@ namespace Collections
             }
 
             #endregion
+
+            #region BinaryTree
+
+            AVL_Tree<int> bt = new AVL_Tree<int>();
+
+            bt.Add(3);
+            bt.Add(6);
+            bt.Add(7);
+            bt.Add(4);
+            bt.Remove(6);
+
+            #endregion
         }
     }
 }
