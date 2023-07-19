@@ -140,7 +140,7 @@ namespace Collections
             bt.Add(6);
             bt.Add(7);
             bt.Add(4);
-            bt.Remove(6);
+            bt.Remove(3);
 
             #endregion
         }
