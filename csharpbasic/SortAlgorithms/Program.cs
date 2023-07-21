@@ -21,16 +21,18 @@ namespace SortAlgorithms
 
             //ArraySorts.BubbleSort(arr);
             //ArraySorts.SelectionSort(arr);
-            ArraySorts.InsertionSort (arr);
+            //ArraySorts.InsertionSort (arr);
+            //ArraySorts.MergeSort (arr);
+            ArraySorts.RecursiveMergeSort (arr);
 
             stopwatch.Stop ();
             Console.WriteLine($"소요시간 : {stopwatch.ElapsedMilliseconds}");
 
-            //Console.Write("Result : ");
-            //for (int i = 0; i < arr.Length; i++)
-            //{
-            //    Console.Write($"{arr[i]}, ");
-            //}
+            Console.Write("Result : ");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"{arr[i]}, ");
+            }
         }
     }
 }
