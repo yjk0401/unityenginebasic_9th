@@ -23,7 +23,8 @@ namespace SortAlgorithms
             //ArraySorts.SelectionSort(arr);
             //ArraySorts.InsertionSort (arr);
             //ArraySorts.MergeSort (arr);
-            ArraySorts.RecursiveMergeSort (arr);
+            //ArraySorts.RecursiveMergeSort (arr);
+            ArraySorts.RecursiveQuickSort (arr);
 
             stopwatch.Stop ();
             Console.WriteLine($"소요시간 : {stopwatch.ElapsedMilliseconds}");
