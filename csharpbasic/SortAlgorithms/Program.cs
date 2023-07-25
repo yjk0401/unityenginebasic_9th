@@ -12,8 +12,8 @@ namespace SortAlgorithms
             Random random = new Random();
             int[] arr //= { 1, 4, 3, 3, 9, 8, 7, 2, 5, 0 };
                         = Enumerable
-                            .Repeat (0, 10000)
-                            .Select (i => random.Next(0, 10000))
+                            .Repeat (0, 10000000)
+                            .Select (i => random.Next(0, 10000000))
                             .ToArray ();
 
             Stopwatch stopwatch = new Stopwatch ();
@@ -24,16 +24,17 @@ namespace SortAlgorithms
             //ArraySorts.InsertionSort (arr);
             //ArraySorts.MergeSort (arr);
             //ArraySorts.RecursiveMergeSort (arr);
-            ArraySorts.RecursiveQuickSort (arr);
+            //ArraySorts.RecursiveQuickSort (arr);
+            ArraySorts.QuickSort (arr);
 
             stopwatch.Stop ();
             Console.WriteLine($"소요시간 : {stopwatch.ElapsedMilliseconds}");
 
-            Console.Write("Result : ");
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.Write($"{arr[i]}, ");
-            }
+            //Console.Write("Result : ");
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.Write($"{arr[i]}, ");
+            //}
         }
     }
 }

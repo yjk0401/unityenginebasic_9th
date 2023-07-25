@@ -144,6 +144,33 @@ namespace SortAlgorithms
         }
 
 
+        public static void QuickSort(int[] arr) 
+        {
+            Stack<int> partionStack = new Stack<int>();
+            partionStack.Push(0);
+            partionStack.Push(arr.Length - 1);
+
+            while (partionStack.Count > 0)
+            {
+                int end = partionStack.Pop();
+                int start = partionStack.Pop();
+                int partition = Partition(arr, start, end);
+
+                // left side
+                if (partition - 1 > start) 
+                {
+                    partionStack.Push(start);
+                    partionStack.Push(partition - 1);
+                }
+
+                // right side
+                if (partition + 1 < end)
+                {
+                    partionStack.Push(partition + 1);
+                    partionStack.Push(end);
+                }
+            }
+        }
 
         public static void RecursiveQuickSort(int[] arr) 
         {
@@ -167,16 +194,21 @@ namespace SortAlgorithms
             while (true)
             {
                 while (arr[start] < pivot) start++;
-                while (start < end &&  arr[end] > pivot) end--;
-
-                if (start < end && arr[start] != arr[end])
+                while (arr[end] > pivot) end--;
+                
+                if (start < end)
                 {
-                    Swap(ref arr[start], ref arr[end]);
+                    if (arr[start] == pivot && arr[start] == arr[end])
+                        end--;
+                    else
+                        Swap(ref arr[start], ref arr[end]);
                 }
                 else
                 {
                     return end;
                 }
+
+
             }
         }
 
