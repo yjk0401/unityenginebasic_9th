@@ -187,7 +187,7 @@ namespace SortAlgorithms
             }
         }
 
-        private static int Partition(int[] arr, int start, int end) 
+        private static int Partition(int[] arr, int start, int end)
         {
             int pivot = arr[end + (start - end) / 2];
 
@@ -195,7 +195,7 @@ namespace SortAlgorithms
             {
                 while (arr[start] < pivot) start++;
                 while (arr[end] > pivot) end--;
-                
+
                 if (start < end)
                 {
                     if (arr[start] == pivot && arr[start] == arr[end])
@@ -212,7 +212,85 @@ namespace SortAlgorithms
             }
         }
 
+        public static void HeapSort(int[] arr) 
+        {
+            //HeapifyTopDown(arr);
+            HeapifyBottomUp(arr);
 
+            InverseHeapify(arr);
+        }
+
+        public static void HeapifyTopDown(int[] arr) 
+        {
+            int end = 1;
+            while (end < arr.Length)
+            {
+                SIFT_Up(arr, 0, end++);
+            }
+        }
+
+        public static void HeapifyBottomUp(int[] arr) 
+        {
+            int end = arr.Length - 1;
+            int current = end;
+
+            while (current >= 0)
+            {
+                SIFT_Down(arr, end, current--);
+            }
+        }
+
+        public static void InverseHeapify(int[] arr)
+        {
+            int end = arr.Length - 1;
+            while (end > 0)
+            {
+                Swap(ref arr[0], ref arr[end]);
+                end--;
+                SIFT_Down(arr, end, 1);
+            }
+        }
+
+        public static void SIFT_Up(int[] arr, int root, int current) 
+        {
+            int parrent = (current - 1) / 2;
+            while (current > root)
+            {
+                if (arr[current] > arr[parrent]) 
+                {
+                    Swap(ref arr[current], ref arr[parrent]);
+                    current = parrent;
+                    parrent = (current - 1) / 2;
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+
+        public static void SIFT_Down(int[] arr, int end, int currennt)
+        {
+            int parrent = (currennt - 1) / 2;
+            while (currennt <= end) 
+            {
+                if (currennt + 1 <= end && 
+                    arr[currennt] < arr[currennt + 1])
+                {
+                    currennt = currennt + 1;
+                }
+                if (arr[currennt] > arr[parrent])
+                {
+                    Swap(ref arr[currennt], ref arr[parrent]);
+                    parrent = currennt;
+                    currennt = parrent * 2 + 1;
+                }
+                else 
+                {
+                    return;
+                }
+            }
+        }
 
         // ref : 인자를 변수의 참조로 받아야 할 때 사용하는 키워드
         public static void Swap(ref int a, ref int b) 
