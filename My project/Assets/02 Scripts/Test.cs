@@ -2,14 +2,91 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// MonoBehaviour : 
+// Component ì˜ ê¸°ë³¸ ë‹¨ìœ„, ìƒì„±ìë¥¼ ì§ì ‘ í˜¸ì¶œí•´ì„œ ìƒì„±í•˜ëŠ”ê²ƒì´ ì•„ë‹ˆê³ 
+// í•´ë‹¹ Script Instance ê°€ ë¡œë“œë  ë•Œ ê°ì²´ê°€ ìƒì„±ì´ ë¨.
+// -> ì§ì ‘ ìš°ë¦¬ê°€ ìƒì„±ìë¥¼ í˜¸ì¶œí•˜ë©´ ì•ˆë¨.
 public class Test : MonoBehaviour
 {
-    // ¾ÀÀÌ ·ÎµåµÇ°í³ª¼­ ÀÌ Å¬·¡½º¸¦ ÄÄÆ÷³ÍÆ®·Î °¡Áö´Â °ÔÀÓ¿ÀºêÁ§Æ®°¡ ·ÎµåµÉ¶§ ÀÌ Å¬·¡½º¿¡ ´ëÇÑ ½ºÅ©¸³Æ® ÀÎ½ºÅÏ½ºµµ ·ÎµåµÊ.
-    // (ÀÌ Å¬·¡½º¸¦ ÄÄÆ÷³ÍÆ®·Î °¡Áö´Â °ÔÀÓ¿ÀºêÀèÆ®°¡ ºñÈ°¼ºÈ­µÈ Ã¤·Î ¾ÀÀÌ ·ÎµåµÇ¾ú´Ù¸é, ½ºÅ©¸³Æ®ÀÎ½ºÅÏ½ºµµ ·Îµå ¡¿
-    // È°¼ºÈ­ µÇ´Â ¼ø°£ ½ºÅ©¸³Æ® ÀÎ½ºÅÏ½ºµµ ·ÎµåÇÔ)
-    // ½ºÅ©¸³Æ® ÀÎ½ºÅÏ½º°¡ ·ÎµåµÉ ¶§ ÇÑ¹ø È£Ãâ
+    // ì”¬ì´ ë¡œë“œë˜ê³ ë‚˜ì„œ ì´ í´ë˜ìŠ¤ë¥¼ ì»´í¬ë„ŒíŠ¸ë¡œ ê°€ì§€ëŠ” ê²Œì„ì˜¤ë¸Œì íŠ¸ê°€ ë¡œë“œë ë•Œ ì´ í´ë˜ìŠ¤ì— ëŒ€í•œ ìŠ¤í¬ë¦½íŠ¸ ì¸ìŠ¤í„´ìŠ¤ë„ ë¡œë“œë¨.
+    // (ì´ í´ë˜ìŠ¤ë¥¼ ì»´í¬ë„ŒíŠ¸ë¡œ ê°€ì§€ëŠ” ê²Œì„ì˜¤ë¸Œì­íŠ¸ê°€ ë¹„í™œì„±í™”ëœ ì±„ë¡œ ì”¬ì´ ë¡œë“œë˜ì—ˆë‹¤ë©´, ìŠ¤í¬ë¦½íŠ¸ì¸ìŠ¤í„´ìŠ¤ë„ ë¡œë“œ Ã—
+    // í™œì„±í™” ë˜ëŠ” ìˆœê°„ ìŠ¤í¬ë¦½íŠ¸ ì¸ìŠ¤í„´ìŠ¤ë„ ë¡œë“œí•¨)
+    // ìŠ¤í¬ë¦½íŠ¸ ì¸ìŠ¤í„´ìŠ¤ê°€ ë¡œë“œë  ë•Œ í•œë²ˆ í˜¸ì¶œ
+    // ìƒì„±ìì—ì„œ ë³´í†µ êµ¬í˜„í•˜ëŠ” ë©¤ë²„ ì´ˆê¸°í™” ë“±ì— ëŒ€í•œ êµ¬í˜„ì„ Awake()ì—ë‹¤ê°€ í•´ì£¼ë©´ ëœë‹¤.
     private void Awake()
     {
         Debug.Log($"Awake");
+    }
+
+    private void OnEnable()
+    {
+        Debug.Log("Enabled");
+    }
+
+    private void Reset()
+    {
+        Debug.Log("Reset");
+    }
+
+    private void Start()
+    {
+        Debug.Log("Start");
+    }
+
+    private void FixedUpdate()
+    {
+        Debug.Log("Fixed Update");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        
+    }
+
+    private void OnMouseOver()
+    {
+        Debug.Log("On Mouse Over");
+    }
+
+    private void Update()
+    {
+        //Debug.Log("Update");
+    }
+
+    private void LateUpdate()
+    {
+        Debug.Log("Late Update");
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(Vector3.zero, 2.0f);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(Vector3.zero, 2.1f);
+    }
+
+    private void OnApplicationQuit()
+    {
+        Debug.Log("Application Quit");
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("Disable");
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log("destroyed");
     }
 }
