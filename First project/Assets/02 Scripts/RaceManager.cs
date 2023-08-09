@@ -12,10 +12,23 @@ public class RaceManager : MonoBehaviour
     public Horse lead => horses.OrderByDescending(x => x.totalDistance).FirstOrDefault();
 
     public List<Horse> horses = new List<Horse>();
+    public List<Horse> arrived = new List<Horse>();
+
+    [SerializeField] private Transform _standPoint1;
+    [SerializeField] private Transform _standPoint2;
+    [SerializeField] private Transform _standPoint3;
 
     public void Register(Horse horse) 
     {
         horses.Add(horse);
+    }
+
+    public void AddArrived(Horse horse) 
+    {
+        arrived.Add(horse);
+
+        if (arrived.Count == horses.Count)
+            FinishRace();
     }
 
     private void Awake()
@@ -34,5 +47,13 @@ public class RaceManager : MonoBehaviour
         {
             horse.doMove = true;
         }
+    }
+
+    public void FinishRace() 
+    {
+        arrived[0].transform.position = _standPoint1.position;
+        arrived[1].transform.position = _standPoint2.position;
+        arrived[2].transform.position = _standPoint3.position;
+        //Debug.Log("Race is Finished !");
     }
 }
