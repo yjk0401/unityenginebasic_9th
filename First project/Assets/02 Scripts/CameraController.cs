@@ -1,16 +1,15 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private Vector3 _offset;
-    private Vector3 _angle;
+    private CinemachineVirtualCamera _vCam;
 
     private void Awake()
     {
-        _offset = transform.position;
-        _angle = transform.eulerAngles;
+        _vCam = GetComponent<CinemachineVirtualCamera>();
     }
 
     private void LateUpdate()
@@ -19,7 +18,9 @@ public class CameraController : MonoBehaviour
 
         if (target != null) 
         {
-            transform.position = target.position + _offset;
+            Transform lead = RaceManager.instance.lead.transform;
+            _vCam.Follow = lead;
+            _vCam.LookAt = lead;
         }
     }
 
