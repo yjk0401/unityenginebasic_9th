@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/01 Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/01 Scenes/SeletSong.unity
+    guid: 362a21a88bf5a9043a43b7f06964a447
+  - enabled: 1
+    path: Assets/01 Scenes/MusicPlay.unity
+    guid: 45b0ec3270e31f84886509289e1d8d60
   m_configObjects: {}
