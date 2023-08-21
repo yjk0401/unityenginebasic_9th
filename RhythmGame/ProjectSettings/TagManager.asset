@@ -41,12 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: top
-    uniqueID: 748988469
+  - name: back
+    uniqueID: 3125645463
+    locked: 0
+  - name: botton
+    uniqueID: 725928527
     locked: 0
   - name: mid
     uniqueID: 3631095631
     locked: 0
-  - name: botton
-    uniqueID: 725928527
+  - name: top
+    uniqueID: 748988469
+    locked: 0
+  - name: Note
+    uniqueID: 1222190095
+    locked: 0
+  - name: New Layer 6
+    uniqueID: 3498949799
     locked: 0

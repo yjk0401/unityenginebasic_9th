@@ -41,7 +41,7 @@ public class MusicPlayManager : MonoBehaviour
     {
         _queue = new Queue<NoteData>(SongDataLoader.dataLoaded.noteDatum.OrderBy(x => x.time));
         _videoPlayer.clip = SongDataLoader.clipLoaded;
-        Invoke("playVideo", noteFallingTime);
+        Invoke("PlayVideo", noteFallingTime);
         _timeMark = Time.time;
         isPlaying = true;   
     }
@@ -70,7 +70,7 @@ public class MusicPlayManager : MonoBehaviour
         }
     }
 
-    private void playVideo() 
+    private void PlayVideo() 
     {
         _videoPlayer.Play();
     }
