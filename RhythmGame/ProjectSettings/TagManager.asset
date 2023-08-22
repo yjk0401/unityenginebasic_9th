@@ -15,7 +15,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Note
   - 
   - 
   - 
@@ -56,6 +56,9 @@ TagManager:
   - name: Note
     uniqueID: 1222190095
     locked: 0
-  - name: New Layer 6
+  - name: Hitting
+    uniqueID: 3809309079
+    locked: 0
+  - name: PopUp
     uniqueID: 3498949799
     locked: 0
