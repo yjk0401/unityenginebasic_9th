@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BadCatcher : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private LayerMask _targetMask;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if ((1 << collision.gameObject.layer & _targetMask) > 0) 
+        {
+            if (collision.TryGetComponent(out Note note)) 
+            {
+                Destroy(note.gameObject);
+                MusicPlayManager.instance.badCount++;
+            }
+        }
     }
 }

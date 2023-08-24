@@ -31,17 +31,34 @@ public class MusicPlayManager : MonoBehaviour
     public const int POINT_GOOD = 100;
     public const int POINT_MISS = 0;
     public const int POINT_BAD = -100;
-    public int point 
+
+    public string rank 
     {
-        get => _point;
+        get 
+        {
+            if ((float)score / scoreMax >= 1.0f) return "PERPECT";
+            else if ((float)score / scoreMax >= 0.95) return "S";
+            else if ((float)score / scoreMax >= 0.85) return "A";
+            else if ((float)score / scoreMax >= 0.75) return "B";
+            else if ((float)score / scoreMax >= 0.65) return "D";
+            else if ((float)score / scoreMax >= 0.55) return "E";
+            else return "Fail";
+        }
+    }
+
+    public int score 
+    {
+        get => _score;
         set 
         {
-            _point = value;
+            _score = value;
             _scoreText.score = value;
         }
     }
-    private int _point;
+    private int _score;
     [SerializeField] private ScoringText _scoreText;
+    public int scoreMax;
+    
 
     public int combo
     {
@@ -62,8 +79,9 @@ public class MusicPlayManager : MonoBehaviour
         get => _coolCount;
         set 
         {
-            point += (value - _coolCount) * POINT_COOL;
+            score += (value - _coolCount) * POINT_COOL;
             combo += (value - _coolCount);
+            _coolCount = value;
             _popUpTextManager.PopUpHitJudgeText(HitJudge.Cool);
         }
     }
@@ -72,8 +90,9 @@ public class MusicPlayManager : MonoBehaviour
         get => _greatCount;
         set
         {
-            point += (value - _greatCount) * POINT_GREAT;
+            score += (value - _greatCount) * POINT_GREAT;
             combo += (value - _greatCount);
+            _greatCount = value;
             _popUpTextManager.PopUpHitJudgeText(HitJudge.Great);
         }
     }
@@ -82,8 +101,9 @@ public class MusicPlayManager : MonoBehaviour
         get => _goodCount;
         set
         {
-            point += (value - _goodCount) * POINT_GOOD;
+            score += (value - _goodCount) * POINT_GOOD;
             combo += (value - _goodCount);
+            _goodCount = value;
             _popUpTextManager.PopUpHitJudgeText(HitJudge.Good);
         }
     }
@@ -92,8 +112,9 @@ public class MusicPlayManager : MonoBehaviour
         get => _missCount;
         set
         {
-            point += (value - _missCount) * POINT_MISS;
+            score += (value - _missCount) * POINT_MISS;
             combo = 0;
+            _missCount = value;
             _popUpTextManager.PopUpHitJudgeText(HitJudge.Miss);
         }
     }
@@ -102,8 +123,9 @@ public class MusicPlayManager : MonoBehaviour
         get => _badCount;
         set
         {
-            point += (value - _badCount) * POINT_BAD;
+            score += (value - _badCount) * POINT_BAD;
             combo = 0;
+            _badCount = value;
             _popUpTextManager.PopUpHitJudgeText(HitJudge.Bad);
         }
     }
@@ -114,6 +136,7 @@ public class MusicPlayManager : MonoBehaviour
     private int _badCount;
 
     [SerializeField] private PopUpTextManager _popUpTextManager;
+    [SerializeField] private ResultUi _resultUi;
 
     private void Awake()
     {
@@ -129,6 +152,16 @@ public class MusicPlayManager : MonoBehaviour
     public void StartMusicPlay()
     {
         _queue = new Queue<NoteData>(SongDataLoader.dataLoaded.noteDatum.OrderBy(x => x.time));
+        scoreMax = _queue.Count * POINT_COOL;
+        highestCombo = 0;
+        combo = 0;
+        score = 0;
+        coolCount = 0;
+        greatCount = 0;
+        goodCount = 0;
+        missCount = 0;
+        badCount = 0;
+
         _videoPlayer.clip = SongDataLoader.clipLoaded;
         Invoke("PlayVideo", noteFallingTime);
         _timeMark = Time.time;
@@ -156,11 +189,18 @@ public class MusicPlayManager : MonoBehaviour
         if (_queue.Count <= 0) 
         {
             isPlaying = false;
+            Invoke("Finish", noteFallingTime + 2.0f);
         }
     }
 
     private void PlayVideo() 
     {
         _videoPlayer.Play();
+    }
+
+    private void Finish() 
+    {
+        _videoPlayer.Stop();
+        _resultUi.gameObject.SetActive(true);
     }
 }
