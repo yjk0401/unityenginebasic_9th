@@ -1,0 +1,102 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
+using UnityEngine;
+
+public static class CharacterStateWorkflows 
+{
+    public abstract class WorkfolwVBase : IWorkflow<State>
+    {
+        public abstract State ID { get; }
+
+        public int Current => current;
+        protected int current;
+
+        protected CharacterMachine machine;
+        protected Transform transform;
+        protected Rigidbody2D rigidbody;
+        protected CapsuleCollider2D collider;
+
+        public WorkfolwVBase(CharacterMachine machine) 
+        {
+            this.machine = machine;
+            this.transform = machine.transform;
+            this.rigidbody = transform.GetComponent<Rigidbody2D>();
+            this.collider = transform.GetComponent<CapsuleCollider2D>();
+        }
+
+        public abstract State MoveNext();
+
+
+        public void Reset()
+        {
+            current = 0;
+        }
+    }
+
+
+    public class Idle : WorkfolwVBase
+    {
+
+        public override State ID => State.Idle;
+
+        public Idle(CharacterMachine machine) : base(machine) 
+        {
+        
+        }
+
+        public override State MoveNext()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        // todo -> X 축 입력 절댓값이 0보다 크면 next = State.Move 
+                        // todo -> Ground 가 감지되지 않으면 next = State.Fall
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    public class Move : WorkfolwVBase
+    {
+
+        public override State ID => State.Move;
+
+        public Move(CharacterMachine machine) : base(machine)
+        {
+
+        }
+
+        public override State MoveNext()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        // todo -> X 축 입력 절댓값이 0보다 크면 next = State.Move 
+                        // todo -> Ground 가 감지되지 않으면 next = State.Fall
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    public static IEnumerable<KeyValuePair<State, IWorkflow<State>>> GetWorkflowForPlayer(CharacterMachine machine) 
+    {
+        return new Dictionary<State, IWorkflow<State>>()
+        {
+            { State.Idle, new Idle(machine) },
+            { State.Move, new Idle(machine) }
+        };
+    }
+}
