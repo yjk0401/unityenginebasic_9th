@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
-public static class CharacterStateWorkflows 
+public static class CharacterStateWorkflowsDataSheet 
 {
     public abstract class WorkfolwVBase : IWorkflow<State>
     {
@@ -51,9 +51,19 @@ public static class CharacterStateWorkflows
 
             switch (current)
             {
+                case 0: 
+                    {
+                        machine.isDirectionChangeable = true;
+                        machine.isMovable = true;
+                        current++;
+                    }
+                    break;
+
+
                 default:
                     {
-                        // todo -> X 축 입력 절댓값이 0보다 크면 next = State.Move 
+                        if (Mathf.Abs(machine.horizotal) > 0)
+                            next = State.Move;
                         // todo -> Ground 가 감지되지 않으면 next = State.Fall
                     }
                     break;
@@ -79,9 +89,18 @@ public static class CharacterStateWorkflows
 
             switch (current)
             {
+                case 0: 
+                    {
+                        machine.isDirectionChangeable = true;
+                        machine.isMovable = true;
+                        current++;
+                    }
+                    break;
+
                 default:
                     {
-                        // todo -> X 축 입력 절댓값이 0보다 크면 next = State.Move 
+                        if (machine.horizotal == 0)
+                            next = State.Idle;
                         // todo -> Ground 가 감지되지 않으면 next = State.Fall
                     }
                     break;
@@ -96,7 +115,7 @@ public static class CharacterStateWorkflows
         return new Dictionary<State, IWorkflow<State>>()
         {
             { State.Idle, new Idle(machine) },
-            { State.Move, new Idle(machine) }
+            { State.Move, new Move(machine) }
         };
     }
 }

@@ -11,6 +11,12 @@ TagManager:
   - 
   - Water
   - UI
+  - Ground
+  - 
+  - 
+  - 
+  - PlayerTriger
+  - PlayerCollision
   - 
   - 
   - 
@@ -19,14 +25,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - EnemyTriger
+  - Enemycollision
   - 
   - 
   - 
