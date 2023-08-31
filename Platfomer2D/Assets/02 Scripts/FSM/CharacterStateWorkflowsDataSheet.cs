@@ -16,11 +16,13 @@ public static class CharacterStateWorkflowsDataSheet
         protected Transform transform;
         protected Rigidbody2D rigidbody;
         protected CapsuleCollider2D collider;
+        protected Animator animator;
 
         public WorkfolwVBase(CharacterMachine machine) 
         {
             this.machine = machine;
             this.transform = machine.transform;
+            this.animator = machine.animator;
             this.rigidbody = transform.GetComponent<Rigidbody2D>();
             this.collider = transform.GetComponent<CapsuleCollider2D>();
         }
@@ -55,6 +57,7 @@ public static class CharacterStateWorkflowsDataSheet
                     {
                         machine.isDirectionChangeable = true;
                         machine.isMovable = true;
+                        animator.Play("Idle");
                         current++;
                     }
                     break;
@@ -93,6 +96,45 @@ public static class CharacterStateWorkflowsDataSheet
                     {
                         machine.isDirectionChangeable = true;
                         machine.isMovable = true;
+                        animator.Play("Move");
+                        current++;
+                    }
+                    break;
+
+                default:
+                    {
+                        if (machine.horizotal == 0)
+                            next = State.Idle;
+                        // todo -> Ground 가 감지되지 않으면 next = State.Fall
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    public class Jump : WorkfolwVBase
+    {
+
+        public override State ID => State.Jump;
+
+        public Jump(CharacterMachine machine) : base(machine)
+        {
+
+        }
+
+        public override State MoveNext()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                case 0:
+                    {
+                        machine.isDirectionChangeable = true;
+                        machine.isMovable = false;
+                        animator.Play("Jump");
                         current++;
                     }
                     break;
