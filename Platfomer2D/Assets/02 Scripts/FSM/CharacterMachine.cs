@@ -62,6 +62,7 @@ public class CharacterMachine : MonoBehaviour
     private Rigidbody2D _rigidbody;
 
     public State current;
+    private bool _isDirty;
     private Dictionary<State, IWorkflow<State>> _states;
 
     public Animator animator;
@@ -90,11 +91,19 @@ public class CharacterMachine : MonoBehaviour
 
     public bool ChangeState(State newState) 
     {
+        if (_isDirty)
+            return false;
+
         if (newState == current)
+            return false;
+
+        if (_states[newState].CanExecute == false)
             return false;
 
         current = newState;
         _states[newState].Reset();
+        ChangeState(_states[newState].MoveNext());
+        _isDirty = true;
         return true;
     }
 
@@ -105,7 +114,7 @@ public class CharacterMachine : MonoBehaviour
         _direction = DIRECTION_RIGHT;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         ChangeState(_states[current].MoveNext());
 
@@ -126,6 +135,11 @@ public class CharacterMachine : MonoBehaviour
         _rigidbody.position += move * Time.fixedDeltaTime;
     }
 
+
+    private void LateUpdate()
+    {
+        _isDirty = false;
+    }
 
     private void OnDrawGizmos()
     {
