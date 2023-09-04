@@ -19,7 +19,7 @@ public static class CharacterStateWorkflowsDataSheet
         protected CharacterMachine machine;
         protected Transform transform;
         protected Rigidbody2D rigidbody;
-        protected CapsuleCollider2D collider;
+        protected CapsuleCollider2D[] colliders;
         protected Animator animator;
 
         public WorkfolwVBase(CharacterMachine machine) 
@@ -28,7 +28,7 @@ public static class CharacterStateWorkflowsDataSheet
             this.transform = machine.transform;
             this.animator = machine.animator;
             this.rigidbody = transform.GetComponent<Rigidbody2D>();
-            this.collider = transform.GetComponent<CapsuleCollider2D>();
+            this.colliders = transform.GetComponentsInChildren<CapsuleCollider2D>();
         }
 
         public abstract State MoveNext();
@@ -38,9 +38,19 @@ public static class CharacterStateWorkflowsDataSheet
         {
             current = 0;
         }
+
+        public virtual void OnEnter() 
+        {
+            Reset();
+        }
+
+        public virtual void OnExit() 
+        {
+            
+        }
     }
 
-
+    #region States
     public class Idle : WorkfolwVBase
     {
 
@@ -51,27 +61,28 @@ public static class CharacterStateWorkflowsDataSheet
         
         }
 
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.hasJumped = false;
+            machine.hasSecondJumped = false;
+            machine.isDirectionChangeable = true;
+            machine.isMovable = true;
+            animator.Play("Idle");
+        }
+
         public override State MoveNext()
         {
             State next = ID;
 
             switch (current)
             {
-                case 0: 
-                    {
-                        machine.isDirectionChangeable = true;
-                        machine.isMovable = true;
-                        animator.Play("Idle");
-                        current++;
-                    }
-                    break;
-
-
                 default:
                     {
                         if (Mathf.Abs(machine.horizotal) > 0)
                             next = State.Move;
-                        // todo -> Ground 가 감지되지 않으면 next = State.Fall
+                        if (machine.isGrounded == false)
+                            next = State.Fall;
                     }
                     break;
             }
@@ -90,26 +101,26 @@ public static class CharacterStateWorkflowsDataSheet
 
         }
 
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.isDirectionChangeable = true;
+            machine.isMovable = true;
+            animator.Play("Move");
+        }
+
         public override State MoveNext()
         {
             State next = ID;
 
             switch (current)
             {
-                case 0: 
-                    {
-                        machine.isDirectionChangeable = true;
-                        machine.isMovable = true;
-                        animator.Play("Move");
-                        current++;
-                    }
-                    break;
-
                 default:
                     {
                         if (machine.horizotal == 0)
                             next = State.Idle;
-
+                        if (machine.isGrounded == false)
+                            next = State.Fall;
                     }
                     break;
             }
@@ -123,6 +134,7 @@ public static class CharacterStateWorkflowsDataSheet
 
         public override State ID => State.Jump;
         public override bool CanExecute => base.CanExecute &&
+                                             machine.hasJumped == false &&
                                             (machine.current == State.Idle ||
                                              machine.current == State.Move) &&
                                              machine.isGrounded;
@@ -134,26 +146,77 @@ public static class CharacterStateWorkflowsDataSheet
             _force = force;
         }
 
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.hasJumped = true;
+            machine.isDirectionChangeable = true;
+            machine.isMovable = false;
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0.0f);
+            rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
+            animator.Play("Jump");
+        }
+
         public override State MoveNext()
         {
             State next = ID;
 
             switch (current)
             {
-                case 0:
-                    {
-                        machine.isDirectionChangeable = true;
-                        machine.isMovable = false;
-                        rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0.0f);
-                        rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
-                        animator.Play("Jump");
-                        current++;
-                    }
-                    break;
-
                 default:
                     {
                         if (rigidbody.velocity.y <= 0.0f) 
+                        {
+                            if (machine.isGrounded)
+                                next = State.Idle;
+                            else
+                                next = State.Fall;
+                        }
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    public class SecondJump : WorkfolwVBase
+    {
+
+        public override State ID => State.SecondJump;
+        public override bool CanExecute => base.CanExecute &&
+                                            machine.hasSecondJumped == false &&
+                                            (machine.current == State.Jump ||
+                                             machine.current == State.Fall) &&
+                                             machine.isGrounded == false;
+
+        private float _force;
+
+        public SecondJump(CharacterMachine machine, float force) : base(machine)
+        {
+            _force = force;
+        }
+
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.hasSecondJumped = true;
+            machine.isDirectionChangeable = true;
+            machine.isMovable = false;
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0.0f);
+            rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
+            animator.Play("SecondJump");
+        }
+
+        public override State MoveNext()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        if (rigidbody.velocity.y <= 0.0f)
                         {
                             if (machine.isGrounded)
                                 next = State.Idle;
@@ -180,22 +243,21 @@ public static class CharacterStateWorkflowsDataSheet
             _landingDistance = landingDistance;
         }
 
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.isDirectionChangeable = true;
+            machine.isMovable = false;
+            _startPosY = rigidbody.position.y;
+            animator.Play("Fall");
+        }
+
         public override State MoveNext()
         {
             State next = ID;
 
             switch (current)
             {
-                case 0:
-                    {
-                        machine.isDirectionChangeable = true;
-                        machine.isMovable = false;
-                        _startPosY = rigidbody.position.y;
-                        animator.Play("Fall");
-                        current++;
-                    }
-                    break;
-
                 default:
                     {
                         if (machine.isGrounded) 
@@ -221,23 +283,22 @@ public static class CharacterStateWorkflowsDataSheet
 
         }
 
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.isDirectionChangeable = true;
+            machine.isMovable = false;
+            machine.move = Vector2.zero;
+            rigidbody.velocity = Vector2.zero;
+            animator.Play("Land");
+        }
+
         public override State MoveNext()
         {
             State next = ID;
 
             switch (current)
             {
-                case 0:
-                    {
-                        machine.isDirectionChangeable = true;
-                        machine.isMovable = false;
-                        machine.move = Vector2.zero;
-                        rigidbody.velocity = Vector2.zero;
-                        animator.Play("Land");
-                        current++;
-                    }
-                    break;
-
                 default:
                     {
                         // 현재 애니메이터의 재생중인 상태의 정보에서 일반화도니 시간이 1.0f 이 된다.
@@ -254,6 +315,85 @@ public static class CharacterStateWorkflowsDataSheet
         }
     }
 
+    public class Crouch : WorkfolwVBase
+    {
+
+        public override State ID => State.Crouch;
+
+        public override bool CanExecute => base.CanExecute &&
+                                           (machine.current == State.Idle ||
+                                            machine.current == State.Move) &&
+                                           machine.isGrounded;
+
+        private Vector2 _offsetCrouched;
+        private Vector2 _sizeCrouched;
+        private Vector2 _offsetOrigin;
+        private Vector2 _sizeOrigin;
+
+        public Crouch(CharacterMachine machine, Vector2 offsetCrouched, Vector2 sizeCrouched) : base(machine)
+        {
+            _offsetCrouched = offsetCrouched;
+            _sizeCrouched = sizeCrouched;
+            _offsetOrigin = colliders[0].offset;
+            _sizeOrigin = colliders[0].size;
+        }
+
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.isDirectionChangeable = true;
+            machine.isMovable = false;
+            machine.move = Vector2.zero;
+            rigidbody.velocity = Vector2.zero;
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                colliders[i].offset = _offsetCrouched;
+                colliders[i].size = _sizeCrouched;
+            }
+            animator.Play("Crouch");
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                colliders[i].offset = _offsetOrigin;
+                colliders[i].size = _sizeOrigin;
+            }
+        }
+
+        public override State MoveNext()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                case 0:
+                    {
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                        {
+                            animator.Play("CrouchIdle");
+                            current++;
+                        }
+                    }
+                    break;
+
+                default: 
+                    {
+                        if (machine.isGrounded ==  false) 
+                        {
+                            next = State.Fall;
+                        }
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    #endregion
 
     public static IEnumerable<KeyValuePair<State, IWorkflow<State>>> GetWorkflowForPlayer(CharacterMachine machine) 
     {
@@ -262,8 +402,10 @@ public static class CharacterStateWorkflowsDataSheet
             { State.Idle, new Idle(machine) },
             { State.Move, new Move(machine) },
             { State.Jump, new Jump(machine, 3.5f) },
+            { State.SecondJump, new SecondJump(machine, 3.5f) },
             { State.Fall, new Fall(machine, 1.0f) },
             { State.Land, new Land(machine) },
+            { State.Crouch, new Crouch(machine, new Vector2(0.0f, 0.12f), new Vector2(0.12f, 0.24f)) },
         };
     }
 }

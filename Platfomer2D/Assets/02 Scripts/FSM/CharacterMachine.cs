@@ -11,8 +11,10 @@ public enum State
     Idle,
     Move,
     Jump,
+    SecondJump,
     Fall,
     Land,
+    Crouch,
 }
 
 public class CharacterMachine : MonoBehaviour
@@ -67,6 +69,10 @@ public class CharacterMachine : MonoBehaviour
 
     public Animator animator;
 
+    //Flags
+    public bool hasJumped;
+    public bool hasSecondJumped;
+
     public bool isGrounded 
     {
         get 
@@ -100,7 +106,9 @@ public class CharacterMachine : MonoBehaviour
         if (_states[newState].CanExecute == false)
             return false;
 
+        _states[current].OnExit();
         current = newState;
+        _states[current].OnEnter();
         _states[newState].Reset();
         ChangeState(_states[newState].MoveNext());
         _isDirty = true;
