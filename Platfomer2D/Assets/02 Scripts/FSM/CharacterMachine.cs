@@ -16,6 +16,7 @@ public enum State
     Fall,
     Land,
     Crouch,
+    Ladder,
 }
 
 public class CharacterMachine : MonoBehaviour
@@ -85,6 +86,16 @@ public class CharacterMachine : MonoBehaviour
     [SerializeField] private Vector2 _groundBelowDetectCenter;
     [SerializeField] private float _groundBelowDetectDistance;
 
+    // Ladder detection
+    public bool canLaderrUp { get; private set; }
+    public bool canLaderrDown { get; private set; }
+    public Ladder upLadder { get; private set; }
+    public Ladder downLadder { get; private set; }
+    [SerializeField] private float _LadderUpDetectOfset;
+    [SerializeField] private float _LadderDownDetectOfset;
+    [SerializeField] private float _LadderDetectRadius;
+    [SerializeField] private LayerMask _ladderMask;
+
     public void Initialize(IEnumerable<KeyValuePair<State, IWorkflow<State>>> copy) 
     {
         _states = new Dictionary<State, IWorkflow<State>>(copy);
@@ -138,6 +149,7 @@ public class CharacterMachine : MonoBehaviour
     {
         _rigidbody.position += move * Time.fixedDeltaTime;
         DetectGround();
+        DetectLadder();
     }
 
 
@@ -170,10 +182,23 @@ public class CharacterMachine : MonoBehaviour
         {
             isGroundExistBelow = false;
         }
+    }
 
-             
+    private void DetectLadder()
+    {
+        Collider2D upCol =
+        Physics2D.OverlapCircle(_rigidbody.position + Vector2.up * _LadderUpDetectOfset,
+                                _LadderDetectRadius,
+                                _ladderMask);
+        upLadder = upCol ? upCol.GetComponent<Ladder>() : null;
+        canLaderrUp = upLadder;
 
-
+        Collider2D downCol =
+        Physics2D.OverlapCircle(_rigidbody.position + Vector2.up * _LadderDownDetectOfset,
+                        _LadderDetectRadius,
+                        _ladderMask);
+        downLadder = downCol ? downCol.GetComponent<Ladder>() : null;
+        canLaderrDown = downLadder;
     }
 
     private void OnDrawGizmos()
@@ -184,5 +209,10 @@ public class CharacterMachine : MonoBehaviour
         Gizmos.color = Color.gray;
         Gizmos.DrawWireCube(transform.position + (Vector3)_groundBelowDetectCenter + Vector3.down * _groundBelowDetectDistance / 2.0f,
                             new Vector3(_groundDetectSize.x, _groundDetectSize.y + _groundBelowDetectDistance));
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position + Vector3.up * _LadderUpDetectOfset, _LadderDetectRadius);
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position + Vector3.up * _LadderDownDetectOfset, _LadderDetectRadius);
     }
 }

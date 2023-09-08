@@ -367,6 +367,48 @@ public static class CharacterStateWorkflowsDataSheet
         }
     }
 
+    public class Ladder : WorkfolwVBase
+    {
+
+        public override State ID => State.Ladder;
+        private float _landingDistance;
+        private float _startPosY;
+
+        public Ladder(CharacterMachine machine, float landingDistance) : base(machine)
+        {
+            _landingDistance = landingDistance;
+        }
+
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            _startPosY = rigidbody.position.y;
+            animator.Play("Ladder");
+        }
+
+        public override State MoveNext()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        if (machine.isGrounded)
+                        {
+                            next = (_startPosY - rigidbody.position.y) < _landingDistance ? State.Idle : State.Land;
+                        }
+
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
     public class Land : WorkfolwVBase
     {
 

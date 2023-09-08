@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Ground
   - 
-  - 
+  - Ladder
   - 
   - PlayerTriger
   - PlayerCollision
@@ -49,4 +49,10 @@ TagManager:
     locked: 0
   - name: TOP
     uniqueID: 2752549897
+    locked: 0
+  - name: Ladder
+    uniqueID: 137500773
+    locked: 0
+  - name: Player
+    uniqueID: 2506406199
     locked: 0
