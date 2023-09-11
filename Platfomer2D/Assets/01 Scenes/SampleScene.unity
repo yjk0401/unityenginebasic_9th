@@ -153,8 +153,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 707805828}
+  m_Children: []
   m_Father: {fileID: 1798315470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &78596249
@@ -1780,7 +1779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 120451723}
   - component: {fileID: 120451724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1864,7 +1863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250534843}
   - component: {fileID: 250534844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1948,7 +1947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365572534}
   - component: {fileID: 365572535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8165,7 +8164,7 @@ GameObject:
   - component: {fileID: 474737535}
   - component: {fileID: 474737534}
   - component: {fileID: 474737533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ladder 1X5 - 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8263,7 +8262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 483055751}
   - component: {fileID: 483055752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8347,7 +8346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513483235}
   - component: {fileID: 513483236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8553,7 +8552,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9599999, y: 0.7700001, z: -10}
+  m_LocalPosition: {x: -0.55999994, y: 0.69000006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8603,7 +8602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 526418674}
   - component: {fileID: 526418675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8836,7 +8835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654305800}
   - component: {fileID: 654305801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21262,13 +21261,13 @@ Transform:
   m_GameObject: {fileID: 707805827}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.96, y: 0.56, z: 0}
+  m_LocalPosition: {x: -0.56, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1307140818}
   - {fileID: 528053327}
-  m_Father: {fileID: 78596248}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &707805829
 CapsuleCollider2D:
@@ -21359,9 +21358,9 @@ MonoBehaviour:
     m_Bits: 64
   _groundBelowDetectCenter: {x: 0, y: -0.24}
   _groundBelowDetectDistance: 2
-  _LadderUpDetectOfset: 0
-  _LadderDownDetectOfset: 0
-  _LadderDetectRadius: 0
+  _LadderUpDetectOfset: 0.15
+  _LadderDownDetectOfset: -0.08
+  _LadderDetectRadius: 0.02
   _ladderMask:
     serializedVersion: 2
     m_Bits: 256
@@ -21674,7 +21673,7 @@ GameObject:
   - component: {fileID: 862653489}
   - component: {fileID: 862653488}
   - component: {fileID: 862653487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ladder 1X5 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21694,8 +21693,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _upStartOfsetY: 0.03
-  _upEndOfsetY: 0.03
-  _downStartOfsetY: 0.05
+  _upEndOfsetY: 0.1
+  _downStartOfsetY: 0.2
   _downEndOfsetY: 0.05
 --- !u!61 &862653488
 BoxCollider2D:
@@ -21751,7 +21750,7 @@ Transform:
   m_GameObject: {fileID: 862653486}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.55999994, y: 1.3599999, z: 0}
+  m_LocalPosition: {x: -0.71999997, y: 1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21854,7 +21853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919152500}
   - component: {fileID: 919152501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21938,7 +21937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 970871473}
   - component: {fileID: 970871474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22023,8 +22022,8 @@ GameObject:
   - component: {fileID: 1065638170}
   - component: {fileID: 1065638169}
   - component: {fileID: 1065638168}
-  m_Layer: 0
-  m_Name: Ladder 1X5 - 2 (1)
+  m_Layer: 8
+  m_Name: Ladder 1X9 - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22043,8 +22042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _upStartOfsetY: 0.03
-  _upEndOfsetY: 0.03
-  _downStartOfsetY: 0.05
+  _upEndOfsetY: -0.03
+  _downStartOfsetY: -0.05
   _downEndOfsetY: 0.05
 --- !u!61 &1065638169
 BoxCollider2D:
@@ -22125,7 +22124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1085010167}
   - component: {fileID: 1085010168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22209,7 +22208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179846583}
   - component: {fileID: 1179846584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22310,7 +22309,7 @@ Transform:
   m_GameObject: {fileID: 1307140817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.078, y: 0.212, z: 0}
+  m_LocalPosition: {x: 0.080000006, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22399,7 +22398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436269396}
   - component: {fileID: 1436269397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22483,7 +22482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444493436}
   - component: {fileID: 1444493437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22623,7 +22622,7 @@ Transform:
   m_GameObject: {fileID: 1456171340}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9599999, y: 0.7700001, z: -10}
+  m_LocalPosition: {x: -0.55999994, y: 0.69000006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59845,7 +59844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512392306}
   - component: {fileID: 1512392307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60017,7 +60016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526903073}
   - component: {fileID: 1526903074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60101,7 +60100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530727496}
   - component: {fileID: 1530727497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60185,7 +60184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640683945}
   - component: {fileID: 1640683946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60304,7 +60303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1816959314}
   - component: {fileID: 1816959315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60388,7 +60387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980612144}
   - component: {fileID: 1980612145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tileset_8 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60517,6 +60516,7 @@ SceneRoots:
   - {fileID: 897319930}
   - {fileID: 619394802}
   - {fileID: 2008592661}
+  - {fileID: 707805828}
   - {fileID: 862653489}
   - {fileID: 474737535}
   - {fileID: 1065638170}

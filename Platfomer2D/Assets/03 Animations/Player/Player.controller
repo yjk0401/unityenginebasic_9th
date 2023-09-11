@@ -141,7 +141,7 @@ AnimatorStateMachine:
     m_State: {fileID: -489677270826654860}
     m_Position: {x: 510, y: 250, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4976986825563033790}
+    m_State: {fileID: 1205320146944995159}
     m_Position: {x: 510, y: 300, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
@@ -253,14 +253,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &4976986825563033790
+--- !u!1102 &1205320146944995159
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ladder
+  m_Name: LadderClimbing
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -273,7 +273,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7c1bece9a5bdcd24d974ee97558a1f46, type: 2}
+  m_Motion: {fileID: 7400000, guid: 50587da82b1b400498507f6931057e36, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

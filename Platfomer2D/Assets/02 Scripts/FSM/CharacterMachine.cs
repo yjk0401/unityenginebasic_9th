@@ -16,7 +16,7 @@ public enum State
     Fall,
     Land,
     Crouch,
-    Ladder,
+    LadderClimbing,
 }
 
 public class CharacterMachine : MonoBehaviour
@@ -56,10 +56,13 @@ public class CharacterMachine : MonoBehaviour
     [HideInInspector] public bool isDirectionChangeable;
     public const int DIRECTION_RIGHT = 1;
     public const int DIRECTION_LEFT = -1;
+    public const int DIRECTION_UP = 1;
+    public const int DIRECTION_DOWN = -1;
 
 
     // Movement
     public virtual float horizotal { get; set; }
+    public virtual float vertical { get; set; }
     public float speed;
     [HideInInspector] public Vector2 move;
     [HideInInspector] public bool isMovable;
@@ -102,7 +105,7 @@ public class CharacterMachine : MonoBehaviour
         current = copy.First().Key;
     }
 
-    public bool ChangeState(State newState) 
+    public bool ChangeState(State newState, object[] parameters = null) 
     {
         if (_isDirty)
             return false;
@@ -115,9 +118,9 @@ public class CharacterMachine : MonoBehaviour
 
         _states[current].OnExit();
         current = newState;
-        _states[current].OnEnter();
+        _states[current].OnEnter(parameters);
         _states[newState].Reset();
-        ChangeState(_states[newState].MoveNext());
+        ChangeState(_states[newState].OnUpdate());
         _isDirty = true;
         return true;
     }
@@ -131,7 +134,7 @@ public class CharacterMachine : MonoBehaviour
 
     protected virtual void Update()
     {
-        ChangeState(_states[current].MoveNext());
+        ChangeState(_states[current].OnUpdate());
 
         if (isMovable) 
         {
@@ -147,6 +150,7 @@ public class CharacterMachine : MonoBehaviour
 
     private void FixedUpdate()
     {
+        _states[current].OnFixedUpdate();
         _rigidbody.position += move * Time.fixedDeltaTime;
         DetectGround();
         DetectLadder();
