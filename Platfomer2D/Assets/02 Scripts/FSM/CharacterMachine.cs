@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using System.Linq;
 using Unity.VisualScripting;
+using System.Net.NetworkInformation;
 
 public enum State 
 {
@@ -17,6 +18,7 @@ public enum State
     Land,
     Crouch,
     LadderClimbing,
+    Ledge,
 }
 
 public class CharacterMachine : MonoBehaviour
@@ -69,6 +71,8 @@ public class CharacterMachine : MonoBehaviour
     private Rigidbody2D _rigidbody;
 
     public State current;
+    public State previous;
+
     private bool _isDirty;
     private Dictionary<State, IWorkflow<State>> _states;
 
@@ -99,6 +103,14 @@ public class CharacterMachine : MonoBehaviour
     [SerializeField] private float _LadderDetectRadius;
     [SerializeField] private LayerMask _ladderMask;
 
+    // Ledge detection
+    public bool isLedgeDetected;
+    public Vector2 ledgePoint;
+    public Vector2 ledgeDectectOffset;
+    [SerializeField] private float _ledgeDetectRadius;
+    public float ledgeDetectDistance;
+    [SerializeField] private LayerMask _ledgeMask;
+
     public void Initialize(IEnumerable<KeyValuePair<State, IWorkflow<State>>> copy) 
     {
         _states = new Dictionary<State, IWorkflow<State>>(copy);
@@ -116,6 +128,8 @@ public class CharacterMachine : MonoBehaviour
         if (_states[newState].CanExecute == false)
             return false;
 
+        _states[current].OnExit();
+        previous = current;
         _states[current].OnExit();
         current = newState;
         _states[current].OnEnter(parameters);
@@ -154,6 +168,7 @@ public class CharacterMachine : MonoBehaviour
         _rigidbody.position += move * Time.fixedDeltaTime;
         DetectGround();
         DetectLadder();
+        DetectLedge();
     }
 
 
@@ -205,6 +220,18 @@ public class CharacterMachine : MonoBehaviour
         canLaderrDown = downLadder;
     }
 
+    private void DetectLedge() 
+    {
+        RaycastHit2D hit =
+            Physics2D.Raycast(_rigidbody.position + new Vector2(ledgeDectectOffset.x * direction, ledgeDectectOffset.y),
+                              Vector2.down,
+                              ledgeDetectDistance,
+                              _ledgeMask);
+
+        isLedgeDetected = hit.collider;
+        ledgePoint = hit.point;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
@@ -218,5 +245,9 @@ public class CharacterMachine : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + Vector3.up * _LadderUpDetectOfset, _LadderDetectRadius);
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position + Vector3.up * _LadderDownDetectOfset, _LadderDetectRadius);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position + (Vector3)ledgeDectectOffset,
+                        transform.position + (Vector3)ledgeDectectOffset + Vector3.down * ledgeDetectDistance);
     }
 }

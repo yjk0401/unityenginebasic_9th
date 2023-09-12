@@ -33,11 +33,12 @@ public class PlayerMachine : CharacterMachine
         {
             if (canLaderrUp)
                 ChangeState(State.LadderClimbing, new object[] { upLadder, DIRECTION_UP });
+            ChangeState(State.Ledge);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            if (canLaderrDown)
+            if (canLaderrDown && isGrounded && (upLadder != downLadder))
                 ChangeState(State.LadderClimbing, new object[] { downLadder, DIRECTION_DOWN });
         }
         if (Input.GetKeyDown(KeyCode.DownArrow)) 

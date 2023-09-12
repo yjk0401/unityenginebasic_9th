@@ -140,9 +140,8 @@ public static class CharacterStateWorkflowsDataSheet
         public override State ID => State.Jump;
         public override bool CanExecute => base.CanExecute &&
                                              machine.hasJumped == false &&
-                                            (machine.current == State.Idle ||
-                                             machine.current == State.Move) &&
-                                             machine.isGrounded;
+                                          (((machine.current == State.Idle || machine.current == State.Move) && machine.isGrounded) ||
+                                             machine.current == State.LadderClimbing);
 
         private float _force;
 
@@ -151,13 +150,18 @@ public static class CharacterStateWorkflowsDataSheet
             _force = force;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="parameters"> 0 : previous state </param>
         public override void OnEnter(object[] parameters)
         {
             base.OnEnter(parameters);
             machine.hasJumped = true;
             machine.isDirectionChangeable = true;
             machine.isMovable = false;
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0.0f);
+            rigidbody.velocity = machine.previous == State.LadderClimbing ?
+                new Vector2(machine.horizotal * machine.speed, 0.0f) : new Vector2(rigidbody.velocity.x, 0.0f);
             rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
             animator.Play("Jump");
         }
@@ -302,7 +306,8 @@ public static class CharacterStateWorkflowsDataSheet
             machine.hasSecondJumped = true;
             machine.isDirectionChangeable = true;
             machine.isMovable = false;
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0.0f);
+            machine.move = Vector2.zero;
+            rigidbody.velocity = new Vector2(machine.horizotal * machine.speed, 0.0f);
             rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
             animator.Play("SecondJump");
         }
@@ -521,6 +526,8 @@ public static class CharacterStateWorkflowsDataSheet
             base.OnEnter(parameters);
             machine.isDirectionChangeable = false;
             machine.isMovable = false;
+            machine.hasJumped = false;
+            machine.hasSecondJumped = false;
             machine.move = Vector2.zero;
             rigidbody.velocity = Vector2.zero;
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
@@ -529,10 +536,13 @@ public static class CharacterStateWorkflowsDataSheet
             _ladder = (Ladder)parameters[0];
             int toward = (int)parameters[1];
             if (toward > 0)
-                transform.position = transform.position.y > _ladder.upEndPos.y ? 
+                transform.position = transform.position.y > _ladder.upStartPos.y ?
                                          new Vector3(_ladder.upStartPos.x, transform.position.y) : _ladder.upStartPos;
-            else if (toward < 0)
-                transform.position = _ladder.downStartPos;
+            else if (toward < 0) 
+            {
+                transform.position = transform.position.y < _ladder.downStartPos.y ?
+                                         new Vector3(_ladder.downStartPos.x, transform.position.y) : _ladder.downStartPos;
+            }
             else
                 throw new System.Exception($"[{machine.gameObject.name} - LadderClimbing] : toward wrong");
         }
@@ -573,8 +583,7 @@ public static class CharacterStateWorkflowsDataSheet
                         }
                         else 
                         {
-                            animator.speed = Mathf.Abs(_vertical);
-                            transform.position += Vector3.up * _vertical * _climbingSpeed * Time.deltaTime;
+                            _vertical = machine.vertical;
                         }
                     }                  
                     break;
@@ -608,12 +617,78 @@ public static class CharacterStateWorkflowsDataSheet
                         }
                         else
                         {
-                            animator.speed = _vertical;
-                            transform.position += Vector3.up * machine.vertical * _climbingSpeed * Time.deltaTime;
+                            animator.speed = Mathf.Abs(_vertical);
+                            transform.position += Vector3.up * machine.vertical * _climbingSpeed * Time.fixedDeltaTime;
                         }
                     }
                     break;
             }
+        }
+    }
+
+    public class Ledge : WorkfolwVBase
+    {
+
+        public override State ID => State.Ledge;
+        public override bool CanExecute => base.CanExecute &&
+                                           machine.isLedgeDetected &&
+                                          (machine.current == State.Jump ||
+                                           machine.current == State.SecondJump ||
+                                           machine.current == State.Fall);
+
+        public Ledge(CharacterMachine machine) : base(machine)
+        {
+
+        }
+
+        public override void OnEnter(object[] parameters)
+        {
+            base.OnEnter(parameters);
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            machine.move = Vector2.zero;
+            rigidbody.velocity = Vector2.zero;
+            rigidbody.bodyType = RigidbodyType2D.Kinematic;
+            transform.position = machine.ledgePoint - new Vector2(machine.ledgeDectectOffset.x * machine.direction,
+                                                                  machine.ledgeDectectOffset.y);
+            animator.Play("LedgeStart");
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+            rigidbody.bodyType = RigidbodyType2D.Dynamic;
+        }
+
+        public override State OnUpdate()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                case 0: 
+                    {
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                            current++;
+
+                    }
+                    break;
+
+                case 1: 
+                    {
+                        animator.Play("LengeIdle");
+                        current++;
+                    }
+                    break;
+
+                default:
+                    {
+
+                    }
+                    break;
+            }
+
+            return next;
         }
     }
 
@@ -632,6 +707,7 @@ public static class CharacterStateWorkflowsDataSheet
             { State.Land, new Land(machine) },
             { State.Crouch, new Crouch(machine, new Vector2(0.0f, 0.12f), new Vector2(0.12f, 0.24f)) },
             { State.LadderClimbing, new LadderClimbing(machine, 1.0f) },
+            { State.Ledge, new Ledge(machine) },
         };
     }
 }
