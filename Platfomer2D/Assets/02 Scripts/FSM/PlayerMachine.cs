@@ -29,6 +29,11 @@ public class PlayerMachine : CharacterMachine
                 ChangeState(State.SecondJump);
         }
 
+        if (Input.GetKeyDown(KeyCode.UpArrow)) 
+        {
+            ChangeState(State.LedgeClimb);
+        }
+
         if (Input.GetKey(KeyCode.UpArrow)) 
         {
             if (canLaderrUp)
