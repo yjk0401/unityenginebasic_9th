@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
@@ -678,7 +679,7 @@ public static class CharacterStateWorkflowsDataSheet
 
                 case 1: 
                     {
-                        animator.Play("LengeIdle");
+                        animator.Play("LedgeIdle");
                         current++;
                     }
                     break;
@@ -722,7 +723,7 @@ public static class CharacterStateWorkflowsDataSheet
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
             _different = machine.ledgePoint - (Vector2)transform.position;
             Vector2 distance = new Vector2(Mathf.Abs(_different.x), Mathf.Abs(_different.y));
-            _different = new Vector2(_different.y / (_different.x + _different.y), _different.x / (_different.x + _different.y));
+            _different = new Vector2(_different.x / (_different.x + _different.y), _different.y / (_different.x + _different.y));
             _startPos = transform.position;
             animator.Play("LedgeClimb");
             _clipLengh = animator.GetCurrentAnimatorClipInfo(0).Length;
@@ -779,7 +780,7 @@ public static class CharacterStateWorkflowsDataSheet
                     break;
             }
 
-            _timer += Time.deltaTime * 3.0f;
+            _timer += Time.deltaTime;
             return next;
         }
     }

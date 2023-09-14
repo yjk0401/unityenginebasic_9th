@@ -60,7 +60,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Idle
-  m_Speed: 1
+  m_Speed: 0.75
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -195,7 +195,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LedgClimb
+  m_Name: LedgeClimb
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -247,7 +247,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LedgIdle
+  m_Name: LedgeIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -321,7 +321,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LedgStart
+  m_Name: LedgeStart
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
