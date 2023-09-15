@@ -20,6 +20,7 @@ public enum State
     LadderClimbing,
     Ledge,
     LedgeClimb,
+    WallSlide,
 }
 
 public class CharacterMachine : MonoBehaviour
@@ -55,7 +56,7 @@ public class CharacterMachine : MonoBehaviour
 
         }
     }
-    private int _direction;
+    private int _direction = DIRECTION_RIGHT;
     [HideInInspector] public bool isDirectionChangeable;
     public const int DIRECTION_RIGHT = 1;
     public const int DIRECTION_LEFT = -1;
@@ -109,8 +110,17 @@ public class CharacterMachine : MonoBehaviour
     public Vector2 ledgePoint;
     public Vector2 ledgeDectectOffset;
     [SerializeField] private float _ledgeDetectRadius;
-    public float ledgeDetectDistance;
     [SerializeField] private LayerMask _ledgeMask;
+
+    public float ledgeDetectDistance;
+
+
+    // Wall detection
+    public bool isWallDetected;
+    [SerializeField] private float _wallTopDetectHeight;
+    [SerializeField] private float _wallBottomDetectHeight;
+    [SerializeField] private float _wallDetectDistance;
+    [SerializeField] private LayerMask _wallMask;
 
     public void Initialize(IEnumerable<KeyValuePair<State, IWorkflow<State>>> copy) 
     {
@@ -170,6 +180,7 @@ public class CharacterMachine : MonoBehaviour
         DetectGround();
         DetectLadder();
         DetectLedge();
+        DetectWall();
     }
 
 
@@ -203,6 +214,8 @@ public class CharacterMachine : MonoBehaviour
             isGroundExistBelow = false;
         }
     }
+
+
 
     private void DetectLadder()
     {
@@ -244,6 +257,25 @@ public class CharacterMachine : MonoBehaviour
         }
     }
 
+    private void DetectWall() 
+    {
+        if (Physics2D.Raycast(_rigidbody.position + Vector2.up * _wallTopDetectHeight,
+                              Vector2.right * _direction,
+                              _wallDetectDistance,
+                              _wallMask).collider &&
+            Physics2D.Raycast(_rigidbody.position + Vector2.up * _wallBottomDetectHeight,
+                              Vector2.right * _direction,
+                              _wallDetectDistance,
+                              _wallMask).collider)
+        {
+            isWallDetected = true;
+        }
+        else 
+        {
+            isWallDetected = false;
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
@@ -261,5 +293,11 @@ public class CharacterMachine : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position + (Vector3)ledgeDectectOffset,
                         transform.position + (Vector3)ledgeDectectOffset + Vector3.down * ledgeDetectDistance);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position + Vector3.up * _wallTopDetectHeight,
+                        transform.position + Vector3.up * _wallTopDetectHeight + Vector3.right * _direction * _wallDetectDistance);
+        Gizmos.DrawLine(transform.position + Vector3.up * _wallBottomDetectHeight,
+                        transform.position + Vector3.up * _wallBottomDetectHeight + Vector3.right * _direction * _wallDetectDistance);
     }
 }

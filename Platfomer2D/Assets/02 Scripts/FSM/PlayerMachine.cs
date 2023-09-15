@@ -29,6 +29,18 @@ public class PlayerMachine : CharacterMachine
                 ChangeState(State.SecondJump);
         }
 
+        if (Input.GetKey(KeyCode.RightArrow) ||
+            Input.GetKey(KeyCode.LeftArrow) ||
+            Input.GetKeyDown(KeyCode.RightArrow) ||
+            Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            ChangeState(State.WallSlide);
+        }
+        else if (current == State.WallSlide) 
+        {
+            ChangeState(State.Idle);
+        }
+
         if (Input.GetKeyDown(KeyCode.UpArrow)) 
         {
             ChangeState(State.LedgeClimb);
