@@ -21,6 +21,7 @@ public enum State
     Ledge,
     LedgeClimb,
     WallSlide,
+    Attack,
 }
 
 public class CharacterMachine : MonoBehaviour
@@ -98,8 +99,8 @@ public class CharacterMachine : MonoBehaviour
     // Ladder detection
     public bool canLaderrUp { get; private set; }
     public bool canLaderrDown { get; private set; }
-    public Ladder upLadder { get; private set; }
-    public Ladder downLadder { get; private set; }
+    public Ladder upLadder;
+    public Ladder downLadder;
     [SerializeField] private float _LadderUpDetectOfset;
     [SerializeField] private float _LadderDownDetectOfset;
     [SerializeField] private float _LadderDetectRadius;
@@ -108,8 +109,8 @@ public class CharacterMachine : MonoBehaviour
     // Ledge detection
     public bool isLedgeDetected;
     public Vector2 ledgePoint;
-    public Vector2 ledgeDectectOffset;
-    [SerializeField] private float _ledgeDetectRadius;
+    public Vector2 ledgeDetectOffset;
+    [SerializeField] private float _ledgeDetectDistance;
     [SerializeField] private LayerMask _ledgeMask;
 
     public float ledgeDetectDistance;
@@ -237,15 +238,15 @@ public class CharacterMachine : MonoBehaviour
     private void DetectLedge() 
     {
         RaycastHit2D hit =
-            Physics2D.Raycast(_rigidbody.position + new Vector2(ledgeDectectOffset.x * direction, ledgeDectectOffset.y),
+            Physics2D.Raycast(_rigidbody.position + new Vector2(ledgeDetectOffset.x * direction, ledgeDetectOffset.y),
                               Vector2.down,
-                              ledgeDetectDistance,
+                              _ledgeDetectDistance,
                               _ledgeMask);
-
+    
         if (hit.collider &&
-            Physics2D.Raycast(_rigidbody.position + new Vector2(ledgeDectectOffset.x * direction, ledgeDectectOffset.y),
+            Physics2D.Raycast(_rigidbody.position + new Vector2(ledgeDetectOffset.x * direction, ledgeDetectOffset.y),
                               Vector2.up,
-                              ledgeDetectDistance,
+                              _ledgeDetectDistance,
                               _ledgeMask) == false)
         {
             isLedgeDetected = true;
@@ -291,8 +292,8 @@ public class CharacterMachine : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + Vector3.up * _LadderDownDetectOfset, _LadderDetectRadius);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position + (Vector3)ledgeDectectOffset,
-                        transform.position + (Vector3)ledgeDectectOffset + Vector3.down * ledgeDetectDistance);
+        Gizmos.DrawLine(transform.position + (Vector3)ledgeDetectOffset,
+                        transform.position + (Vector3)ledgeDetectOffset + Vector3.down * ledgeDetectDistance);
 
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position + Vector3.up * _wallTopDetectHeight,

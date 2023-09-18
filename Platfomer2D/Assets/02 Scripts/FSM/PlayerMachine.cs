@@ -41,16 +41,16 @@ public class PlayerMachine : CharacterMachine
             ChangeState(State.Idle);
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)) 
-        {
-            ChangeState(State.LedgeClimb);
-        }
-
         if (Input.GetKey(KeyCode.UpArrow)) 
         {
             if (canLaderrUp)
                 ChangeState(State.LadderClimbing, new object[] { upLadder, DIRECTION_UP });
             ChangeState(State.Ledge);
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            ChangeState(State.LedgeClimb);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
@@ -67,6 +67,11 @@ public class PlayerMachine : CharacterMachine
         {
             if (current == State.Crouch)
                 ChangeState(State.Idle);
+        }
+
+        if (Input.GetKeyDown(KeyCode.X)) 
+        {
+            ChangeState(State.Attack);
         }
     }
 }

@@ -638,8 +638,8 @@ public static class CharacterStateWorkflowsDataSheet
                                            machine.isLedgeDetected &&
                                           (machine.current == State.Jump ||
                                            machine.current == State.SecondJump ||
-                                           machine.current == State.Fall ||
-                                           machine.current == State.Ledge);
+                                           machine.current == State.JumpDown ||
+                                           machine.current == State.Fall);
 
         public Ledge(CharacterMachine machine) : base(machine)
         {
@@ -656,8 +656,8 @@ public static class CharacterStateWorkflowsDataSheet
             machine.move = Vector2.zero;
             rigidbody.velocity = Vector2.zero;
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
-            transform.position = machine.ledgePoint - new Vector2(machine.ledgeDectectOffset.x * machine.direction,
-                                                                  machine.ledgeDectectOffset.y);
+            transform.position = machine.ledgePoint - new Vector2(machine.ledgeDetectOffset.x * machine.direction,
+                                                                  machine.ledgeDetectOffset.y);
             animator.Play("LedgeStart");
         }
 
@@ -727,11 +727,11 @@ public static class CharacterStateWorkflowsDataSheet
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
             _different = machine.ledgePoint - (Vector2)transform.position;
             Vector2 distance = new Vector2(Mathf.Abs(_different.x), Mathf.Abs(_different.y));
-            _different = new Vector2(_different.x / (_different.x + _different.y), _different.y / (_different.x + _different.y));
+            _differentRatio = new Vector2(distance.x / (distance.x + distance.y), distance.y / (distance.x + distance.y));
             _startPos = transform.position;
             animator.Play("LedgeClimb");
             _clipLengh = animator.GetCurrentAnimatorClipInfo(0).Length;
-            _timer = _clipLengh;
+            _timer = 0.0f;
         }
 
         public override void OnExit()
@@ -784,7 +784,7 @@ public static class CharacterStateWorkflowsDataSheet
                     break;
             }
 
-            _timer += Time.deltaTime;
+            _timer += Time.deltaTime * 5.0f;
             return next;
         }
     }
@@ -852,6 +852,97 @@ public static class CharacterStateWorkflowsDataSheet
         }
     }
 
+    public class Attack : WorkfolwVBase
+    {
+        public override State ID => State.Attack;
+
+        public override bool CanExecute 
+        {
+            get 
+            {
+                if (_combo > 0 &&
+                    Time.time - _exitTimeMark >= _comboResetTime) 
+                {
+                    _combo = 0;
+                    _hasHit = false;
+                }
+
+                if (_combo > _comboMax) 
+                {
+                    return false;
+                }
+
+                if (base.CanExecute &&
+                    ((_combo == 0) || (_combo > 0 && _hasHit)) &&
+                    (machine.current == State.Idle ||
+                     machine.current == State.Move ||
+                     machine.current == State.Fall ||
+                     machine.current == State.Jump ||
+                     machine.current == State.SecondJump)) 
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
+
+        private int _comboMax;
+        private int _combo;
+        private float _comboResetTime;
+        private float _exitTimeMark;
+        private bool _hasHit;
+        private AnimatorEvents _animatorEvents;
+
+        public Attack(CharacterMachine machine, int comboMax, float comboResetTime) : base(machine)
+        {
+            _comboMax = comboMax;
+            _comboResetTime = comboResetTime;
+            _animatorEvents = machine.GetComponentInChildren<AnimatorEvents>();
+            _animatorEvents.onAttackHit += () => _hasHit = true;
+        }
+
+        public override void OnEnter(object[] parameters)
+        {
+            base.OnEnter(parameters);
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            if (machine.isGrounded) 
+            {
+                machine.move = Vector2.zero;
+                rigidbody.velocity = Vector2.zero;
+            }
+            _hasHit = false;
+            animator.SetFloat("attackComboStack", _combo++);
+            animator.Play("Attack");
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+            _exitTimeMark = Time.time;
+        }
+
+        public override State OnUpdate()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f) 
+                        {
+                            next = State.Idle;
+                        }
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
     #endregion
 
     public static IEnumerable<KeyValuePair<State, IWorkflow<State>>> GetWorkflowForPlayer(CharacterMachine machine) 
@@ -870,6 +961,7 @@ public static class CharacterStateWorkflowsDataSheet
             { State.Ledge, new Ledge(machine) },
             { State.LedgeClimb, new LedgeClimb(machine) },
             { State.WallSlide, new WallSlide(machine, 0.8f) },
+            { State.Attack, new Attack(machine, 2, 0.2f) },
         };
     }
 }
