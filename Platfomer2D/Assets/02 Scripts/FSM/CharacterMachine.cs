@@ -5,6 +5,7 @@ using TMPro;
 using System.Linq;
 using Unity.VisualScripting;
 using System.Net.NetworkInformation;
+using System;
 
 public enum State 
 {
@@ -22,9 +23,12 @@ public enum State
     LedgeClimb,
     WallSlide,
     Attack,
+    Hurt,
+    Die,
+    Dash,
 }
 
-public class CharacterMachine : MonoBehaviour
+public class CharacterMachine : MonoBehaviour, Hp
 {
     //Direcrion
     public int direction
@@ -99,6 +103,7 @@ public class CharacterMachine : MonoBehaviour
     // Ladder detection
     public bool canLaderrUp { get; private set; }
     public bool canLaderrDown { get; private set; }
+
     public Ladder upLadder;
     public Ladder downLadder;
     [SerializeField] private float _LadderUpDetectOfset;
@@ -122,6 +127,44 @@ public class CharacterMachine : MonoBehaviour
     [SerializeField] private float _wallBottomDetectHeight;
     [SerializeField] private float _wallDetectDistance;
     [SerializeField] private LayerMask _wallMask;
+
+
+    //hp
+    public float hpValue 
+    {
+        get => _hpValue;
+        private set 
+        {
+            if (value == _hpValue)
+                return;
+
+            if (value > _hpMax)
+                value = _hpMax;
+            else if (value < hpMin)
+                value = hpMin;
+
+            _hpValue = value;
+            onHpChanged?.Invoke(value);
+
+            if (value == hpMax)
+                onHpMax?.Invoke();
+            else if (value == hpMin)
+                onHpMin?.Invoke();
+        }
+    }
+
+    public float hpMax => hpMax;
+
+    public float hpMin => throw new NotImplementedException();
+
+    private float _hpValue;
+    [SerializeField] private float _hpMax;
+
+    public event Action<float> onHpChanged;
+    public event Action<float> onHpRecovered;
+    public event Action<float> onHpDepleted;
+    public event Action onHpMax;
+    public event Action onHpMin;
 
     public void Initialize(IEnumerable<KeyValuePair<State, IWorkflow<State>>> copy) 
     {
@@ -156,6 +199,7 @@ public class CharacterMachine : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _direction = DIRECTION_RIGHT;
+        _hpValue = _hpMax;
     }
 
     protected virtual void Update()
@@ -275,6 +319,25 @@ public class CharacterMachine : MonoBehaviour
         {
             isWallDetected = false;
         }
+    }
+
+    public void RecoverHp(object subject, float amount)
+    {
+        if (amount <= 0)
+            return;
+
+        hpValue += amount;
+        onHpRecovered?.Invoke(amount);
+    }
+
+    public void DepleteHp(object subject, float amount)
+    {
+        if (amount <= 0)
+            return;
+
+        hpValue -= amount;
+        onHpDepleted?.Invoke(amount);
+        ChangeState(State.Hurt);
     }
 
     private void OnDrawGizmos()

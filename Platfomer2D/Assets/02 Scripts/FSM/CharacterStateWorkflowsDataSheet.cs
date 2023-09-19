@@ -943,6 +943,143 @@ public static class CharacterStateWorkflowsDataSheet
         }
     }
 
+    public class Dash : WorkfolwVBase
+    {
+
+        public override State ID => State.Dash;
+        public override bool CanExecute => base.CanExecute &&
+                                           (machine.current == State.Idle || 
+                                            machine.current == State.Move ||
+                                            machine.current == State.Jump ||
+                                            machine.current == State.SecondJump ||
+                                            machine.current == State.Fall);
+
+        private float _force;
+
+        public Dash(CharacterMachine machine, float force) : base(machine)
+        {
+            _force = force;
+        }
+
+        public override void OnEnter(object[] parameters)
+        {
+            base.OnEnter(parameters);
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            machine.move = Vector2.zero;
+            rigidbody.velocity = Vector2.zero;
+            if (machine.direction > 0)
+                rigidbody.AddForce(Vector2.right * _force * 1.5f, ForceMode2D.Impulse);
+            if (machine.direction < 0)
+                rigidbody.AddForce(Vector2.left * _force * 1.5f, ForceMode2D.Impulse);
+            animator.Play("Dash");
+        }
+
+        public override State OnUpdate()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+                            next = State.Idle;
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    public class Hurt : WorkfolwVBase
+    {
+        public override State ID => State.Hurt;
+
+        public override bool CanExecute => base.CanExecute &&
+                                           (machine.current == State.Idle ||
+                                            machine.current == State.Move ||
+                                            machine.current == State.Jump ||
+                                            machine.current == State.SecondJump ||
+                                            machine.current == State.Fall ||
+                                            machine.current == State.Crouch ||
+                                            machine.current == State.JumpDown ||
+                                            machine.current == State.Ledge ||
+                                            machine.current == State.LedgeClimb ||
+                                            machine.current == State.LadderClimbing ||
+                                            machine.current == State.WallSlide ||
+                                            machine.current == State.Land);
+
+        public Hurt(CharacterMachine machine) : base(machine)
+        {
+
+        }
+
+        public override void OnEnter(object[] parameters)
+        {
+            base.OnEnter(parameters);
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            machine.move = Vector2.zero;
+            rigidbody.velocity = Vector2.zero;
+            animator.Play("Hurt");
+        }
+
+        public override State OnUpdate()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        next = State.Idle;
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
+    public class Die : WorkfolwVBase
+    {
+
+        public override State ID => State.Die;
+
+        public Die(CharacterMachine machine) : base(machine)
+        {
+
+        }
+
+        public override void OnEnter(object[] parameters)
+        {
+            base.OnEnter(parameters);
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            machine.move = Vector2.zero;
+            rigidbody.velocity = Vector2.zero;
+            animator.Play("Die");
+        }
+
+        public override State OnUpdate()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
     #endregion
 
     public static IEnumerable<KeyValuePair<State, IWorkflow<State>>> GetWorkflowForPlayer(CharacterMachine machine) 
@@ -962,6 +1099,9 @@ public static class CharacterStateWorkflowsDataSheet
             { State.LedgeClimb, new LedgeClimb(machine) },
             { State.WallSlide, new WallSlide(machine, 0.8f) },
             { State.Attack, new Attack(machine, 2, 0.2f) },
+            { State.Dash, new Dash(machine, 2.0f)},
+            { State.Hurt, new Hurt(machine) },
+            { State.Die, new Die(machine) },
         };
     }
 }

@@ -17,6 +17,8 @@ public class PlayerMachine : CharacterMachine
     private void Start()
     {
         Initialize(CharacterStateWorkflowsDataSheet.GetWorkflowForPlayer(this));
+        onHpDepleted += (amount) => ChangeState(State.Hurt);
+        onHpMin += () => ChangeState(State.Die);
     }
 
     protected override void Update() 
@@ -72,6 +74,11 @@ public class PlayerMachine : CharacterMachine
         if (Input.GetKeyDown(KeyCode.X)) 
         {
             ChangeState(State.Attack);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z)) 
+        {
+            ChangeState(State.Dash);
         }
     }
 }
