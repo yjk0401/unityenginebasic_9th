@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class PlayerMachine : CharacterMachine 
 {
-    public override float horizotal 
+    public override float horizontal 
     {
         get => Input.GetAxisRaw("Horizontal");
-        set => base.horizotal = value; 
+        set => base.horizontal = value; 
     }
 
     public override float vertical 
@@ -24,11 +24,16 @@ public class PlayerMachine : CharacterMachine
     protected override void Update() 
     {
         base.Update();
+        if (Input.GetKey(KeyCode.C))
+            if (current == State.Dash)
+                ChangeState(State.Idle);
+
+
         if (Input.GetKeyDown(KeyCode.C))
         {
-            if (ChangeState(State.JumpDown) == false)
-            if (ChangeState(State.Jump) == false)
-                ChangeState(State.SecondJump);
+                if (ChangeState(State.JumpDown) == false)
+                if (ChangeState(State.Jump) == false)
+                    ChangeState(State.SecondJump);
         }
 
         if (Input.GetKey(KeyCode.RightArrow) ||

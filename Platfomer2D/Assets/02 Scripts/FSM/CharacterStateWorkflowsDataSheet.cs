@@ -86,7 +86,7 @@ public static class CharacterStateWorkflowsDataSheet
             {
                 default:
                     {
-                        if (Mathf.Abs(machine.horizotal) > 0)
+                        if (Mathf.Abs(machine.horizontal) > 0)
                             next = State.Move;
                         if (machine.isGrounded == false)
                             next = State.Fall;
@@ -124,7 +124,7 @@ public static class CharacterStateWorkflowsDataSheet
             {
                 default:
                     {
-                        if (machine.horizotal == 0)
+                        if (machine.horizontal == 0)
                             next = State.Idle;
                         if (machine.isGrounded == false)
                             next = State.Fall;
@@ -165,7 +165,7 @@ public static class CharacterStateWorkflowsDataSheet
             machine.isDirectionChangeable = true;
             machine.isMovable = false;
             rigidbody.velocity = machine.previous == State.LadderClimbing || machine.previous == State.Ledge || machine.previous == State.WallSlide ?
-                new Vector2(machine.horizotal * machine.speed, 0.0f) : new Vector2(rigidbody.velocity.x, 0.0f);
+                new Vector2(machine.horizontal * machine.speed, 0.0f) : new Vector2(rigidbody.velocity.x, 0.0f);
             rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
             animator.Play("Jump");
         }
@@ -311,7 +311,7 @@ public static class CharacterStateWorkflowsDataSheet
             machine.isDirectionChangeable = true;
             machine.isMovable = false;
             machine.move = Vector2.zero;
-            rigidbody.velocity = new Vector2(machine.horizotal * machine.speed, 0.0f);
+            rigidbody.velocity = new Vector2(machine.horizontal * machine.speed, 0.0f);
             rigidbody.AddForce(Vector2.up * _force, ForceMode2D.Impulse);
             animator.Play("SecondJump");
         }
@@ -639,7 +639,9 @@ public static class CharacterStateWorkflowsDataSheet
                                           (machine.current == State.Jump ||
                                            machine.current == State.SecondJump ||
                                            machine.current == State.JumpDown ||
-                                           machine.current == State.Fall);
+                                           machine.current == State.Fall ||
+                                           machine.current == State.Move ||
+                                           machine.current == State.Dash);
 
         public Ledge(CharacterMachine machine) : base(machine)
         {
@@ -955,6 +957,7 @@ public static class CharacterStateWorkflowsDataSheet
                                             machine.current == State.Fall);
 
         private float _force;
+        private Vector2 _velocity;
 
         public Dash(CharacterMachine machine, float force) : base(machine)
         {
@@ -966,12 +969,11 @@ public static class CharacterStateWorkflowsDataSheet
             base.OnEnter(parameters);
             machine.isDirectionChangeable = false;
             machine.isMovable = false;
-            machine.move = Vector2.zero;
-            rigidbody.velocity = Vector2.zero;
             if (machine.direction > 0)
-                rigidbody.AddForce(Vector2.right * _force * 1.5f, ForceMode2D.Impulse);
+                machine.move = Vector2.right * _force * 1.5f;
             if (machine.direction < 0)
-                rigidbody.AddForce(Vector2.left * _force * 1.5f, ForceMode2D.Impulse);
+                machine.move = Vector2.left * _force * 1.5f;
+            rigidbody.velocity = Vector2.zero;
             animator.Play("Dash");
         }
 
@@ -1099,7 +1101,30 @@ public static class CharacterStateWorkflowsDataSheet
             { State.LedgeClimb, new LedgeClimb(machine) },
             { State.WallSlide, new WallSlide(machine, 0.8f) },
             { State.Attack, new Attack(machine, 2, 0.2f) },
-            { State.Dash, new Dash(machine, 2.0f)},
+            { State.Dash, new Dash(machine, 1.5f)},
+            { State.Hurt, new Hurt(machine) },
+            { State.Die, new Die(machine) },
+        };
+    }
+
+    public static IEnumerable<KeyValuePair<State, IWorkflow<State>>> GetWorkflowsForEmemy(CharacterMachine machine)
+    {
+        return new Dictionary<State, IWorkflow<State>>()
+        {
+            { State.Idle, new Idle(machine) },
+            { State.Move, new Move(machine) },
+            { State.Jump, new Jump(machine, 3.5f) },
+            { State.JumpDown, new JumpDown(machine, 1.0f, 0.5f) },
+            { State.SecondJump, new SecondJump(machine, 3.5f) },
+            { State.Fall, new Fall(machine, 1.0f) },
+            { State.Land, new Land(machine) },
+            { State.Crouch, new Crouch(machine, new Vector2(0.0f, 0.12f), new Vector2(0.12f, 0.24f)) },
+            { State.LadderClimbing, new LadderClimbing(machine, 1.0f) },
+            { State.Ledge, new Ledge(machine) },
+            { State.LedgeClimb, new LedgeClimb(machine) },
+            { State.WallSlide, new WallSlide(machine, 0.8f) },
+            { State.Attack, new Attack(machine, 0, 0.0f) },
+            { State.Dash, new Dash(machine, 0.0f)},
             { State.Hurt, new Hurt(machine) },
             { State.Die, new Die(machine) },
         };

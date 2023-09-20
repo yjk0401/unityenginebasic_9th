@@ -70,7 +70,7 @@ public class CharacterMachine : MonoBehaviour, Hp
 
 
     // Movement
-    public virtual float horizotal { get; set; }
+    public virtual float horizontal { get; set; }
     public virtual float vertical { get; set; }
     public float speed;
     [HideInInspector] public Vector2 move;
@@ -208,13 +208,13 @@ public class CharacterMachine : MonoBehaviour, Hp
 
         if (isMovable) 
         {
-            move = new Vector2(horizotal * speed, 0.0f);
+            move = new Vector2(horizontal * speed, 0.0f);
         }
 
         if (isDirectionChangeable &&
-            Mathf.Abs(horizotal) > 0.0f)
+            Mathf.Abs(horizontal) > 0.0f)
         {
-            direction = horizotal < 0.0f ? DIRECTION_LEFT : DIRECTION_RIGHT;
+            direction = horizontal < 0.0f ? DIRECTION_LEFT : DIRECTION_RIGHT;
         }
     }
 
@@ -340,7 +340,7 @@ public class CharacterMachine : MonoBehaviour, Hp
         ChangeState(State.Hurt);
     }
 
-    private void OnDrawGizmos()
+    protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(transform.position + (Vector3)_groundDetectCenter, _groundDetectSize);
