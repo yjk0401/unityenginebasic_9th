@@ -71,8 +71,11 @@ public static class CharacterStateWorkflowsDataSheet
         public override void OnEnter(object[] parameters)
         {
             base.OnEnter(parameters);
-            machine.hasJumped = false;
-            machine.hasSecondJumped = false;
+            if (machine.isGrounded) 
+            {
+                machine.hasJumped = false;
+                machine.hasSecondJumped = false;
+            }
             machine.isDirectionChangeable = true;
             machine.isMovable = true;
             animator.Play("Idle");
@@ -957,7 +960,6 @@ public static class CharacterStateWorkflowsDataSheet
                                             machine.current == State.Fall);
 
         private float _force;
-        private Vector2 _velocity;
 
         public Dash(CharacterMachine machine, float force) : base(machine)
         {
@@ -995,6 +997,80 @@ public static class CharacterStateWorkflowsDataSheet
         }
     }
 
+    public class Slide : WorkfolwVBase
+    {
+
+        public override State ID => State.Slide;
+        public override bool CanExecute => base.CanExecute &&
+                                           machine.current == State.Crouch;
+
+        private float _force;
+
+        private Vector2 _offsetCrouched;
+        private Vector2 _sizeCrouched;
+        private Vector2 _offsetOrigin;
+        private Vector2 _sizeOrigin;
+
+        public Slide(CharacterMachine machine, float force ,Vector2 offsetCrouched, Vector2 sizeCrouched) : base(machine)
+        {
+            _offsetCrouched = offsetCrouched;
+            _sizeCrouched = sizeCrouched;
+            _offsetOrigin = colliders[0].offset;
+            _sizeOrigin = colliders[0].size;
+            _force = force;
+        }
+
+        public override void OnEnter(object[] parameters)
+        {
+            base.OnEnter(parameters);
+            machine.isDirectionChangeable = false;
+            machine.isMovable = false;
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                colliders[i].offset = _offsetCrouched;
+                colliders[i].size = _sizeCrouched;
+            }
+            if (machine.direction > 0)
+                machine.move = Vector2.right * _force * 1.5f;
+            if (machine.direction < 0)
+                machine.move = Vector2.left * _force * 1.5f;
+            rigidbody.velocity = Vector2.zero;
+            animator.Play("Slide");
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                colliders[i].offset = _offsetOrigin;
+                colliders[i].size = _sizeOrigin;
+            }
+        }
+
+        public override State OnUpdate()
+        {
+            State next = ID;
+
+            switch (current)
+            {
+                default:
+                    {
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f) 
+                        {
+                            if (machine.vertical < 0)
+                                next = State.Crouch;
+                            else
+                                next = State.Idle;
+                        }
+                    }
+                    break;
+            }
+
+            return next;
+        }
+    }
+
     public class Hurt : WorkfolwVBase
     {
         public override State ID => State.Hurt;
@@ -1011,7 +1087,9 @@ public static class CharacterStateWorkflowsDataSheet
                                             machine.current == State.LedgeClimb ||
                                             machine.current == State.LadderClimbing ||
                                             machine.current == State.WallSlide ||
-                                            machine.current == State.Land);
+                                            machine.current == State.Land ||
+                                            machine.current == State.Dash ||
+                                            machine.current == State.Slide);
 
         public Hurt(CharacterMachine machine) : base(machine)
         {
@@ -1058,6 +1136,7 @@ public static class CharacterStateWorkflowsDataSheet
         public override void OnEnter(object[] parameters)
         {
             base.OnEnter(parameters);
+            machine.isInvincible = true;
             machine.isDirectionChangeable = false;
             machine.isMovable = false;
             machine.move = Vector2.zero;
@@ -1073,7 +1152,10 @@ public static class CharacterStateWorkflowsDataSheet
             {
                 default:
                     {
-
+                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 2.0f) 
+                        {
+                            GameObject.Destroy(machine.gameObject);
+                        }
                     }
                     break;
             }
@@ -1102,6 +1184,7 @@ public static class CharacterStateWorkflowsDataSheet
             { State.WallSlide, new WallSlide(machine, 0.8f) },
             { State.Attack, new Attack(machine, 2, 0.2f) },
             { State.Dash, new Dash(machine, 1.5f)},
+            { State.Slide, new Slide(machine, 1.5f, new Vector2(0.0f, 0.12f), new Vector2(0.12f, 0.24f)) },
             { State.Hurt, new Hurt(machine) },
             { State.Die, new Die(machine) },
         };

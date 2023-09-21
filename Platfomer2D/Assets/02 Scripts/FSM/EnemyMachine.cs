@@ -13,7 +13,6 @@ public class EnemyMachine : CharacterMachine
         ExcuteRandomBehaviour,
         WaitUtilRandomBehaviourFinihed,
         Follow,
-        Attack,
     }
     [SerializeField] private AI _ai;
     private Transform _target;
@@ -32,6 +31,14 @@ public class EnemyMachine : CharacterMachine
     [SerializeField] private float _thinkTimeMin;
     [SerializeField] private float _thinkTimeMax;
     private float _thinkTimer;
+
+    private CapsuleCollider2D _col;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        _col = GetComponent<CapsuleCollider2D>();
+    }
 
     private void Start()
     {
@@ -94,8 +101,33 @@ public class EnemyMachine : CharacterMachine
                 }
                 break;
             case AI.Follow:
-                break;
-            case AI.Attack:
+                {
+                    if (_target == null ||
+                        Vector2.Distance(transform.position, _target.position) > _targetDetectRange) 
+                    {
+                        _ai = AI.Think;
+                        return;
+                    }
+
+                    if (transform.position.x < _target.position.x - _col.size.x)
+                    {
+                        horizontal = DIRECTION_RIGHT;
+                    }
+                    else if (transform.position.x > _target.position.x + _col.size.x) 
+                    {
+                        horizontal = DIRECTION_LEFT;
+                    }
+
+                    if (_attackEnable &&
+                        Vector2.Distance(transform.position, _target.position) <= _attackRange)
+                    {
+                        ChangeState(State.Attack);
+                    }
+                    else 
+                    {
+                        ChangeState(State.Move);
+                    }
+                }
                 break;
             default:
                 break;
@@ -116,6 +148,22 @@ public class EnemyMachine : CharacterMachine
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, _attackRange);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if ((1 << collision.gameObject.layer & _targetDetectMask) > 0) 
+        {
+            if (collision.TryGetComponent(out CharacterMachine target)) 
+            {
+                if (target.isInvincible == false) 
+                {
+                    target.DepleteHp(this, Random.Range(_attackForceMin, _attackForceMax));
+                    Vector2 knockBackForce = new Vector2((target.transform.position - transform.position).normalized.x, 1.0f);
+                    target.KnockBack(knockBackForce);
+                }
+            }
         }
     }
 }

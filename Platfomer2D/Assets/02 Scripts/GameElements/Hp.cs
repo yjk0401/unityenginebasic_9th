@@ -5,6 +5,7 @@ using UnityEngine;
 
 public interface Hp
 {
+    bool isInvincible { get; }
     float hpValue { get; }
     float hpMax { get; }
     float hpMin { get; }

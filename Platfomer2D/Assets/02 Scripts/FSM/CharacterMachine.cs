@@ -1,11 +1,7 @@
-using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
-using TMPro;
-using System.Linq;
-using Unity.VisualScripting;
-using System.Net.NetworkInformation;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public enum State 
 {
@@ -23,9 +19,10 @@ public enum State
     LedgeClimb,
     WallSlide,
     Attack,
+    Dash,
+    Slide,
     Hurt,
     Die,
-    Dash,
 }
 
 public class CharacterMachine : MonoBehaviour, Hp
@@ -128,6 +125,7 @@ public class CharacterMachine : MonoBehaviour, Hp
     [SerializeField] private float _wallDetectDistance;
     [SerializeField] private LayerMask _wallMask;
 
+    public bool isInvincible { get; set; }
 
     //hp
     public float hpValue 
@@ -153,9 +151,9 @@ public class CharacterMachine : MonoBehaviour, Hp
         }
     }
 
-    public float hpMax => hpMax;
+    public float hpMax => _hpMax;
 
-    public float hpMin => throw new NotImplementedException();
+    public float hpMin => 0;
 
     private float _hpValue;
     [SerializeField] private float _hpMax;
@@ -165,6 +163,9 @@ public class CharacterMachine : MonoBehaviour, Hp
     public event Action<float> onHpDepleted;
     public event Action onHpMax;
     public event Action onHpMin;
+
+    public float _attackForceMin;
+    public float _attackForceMax;
 
     public void Initialize(IEnumerable<KeyValuePair<State, IWorkflow<State>>> copy) 
     {
@@ -194,7 +195,13 @@ public class CharacterMachine : MonoBehaviour, Hp
         return true;
     }
 
-    private void Awake()
+    public void KnockBack(Vector2 force) 
+    {
+        _rigidbody.velocity = Vector2.zero;
+        _rigidbody.AddForce(force, ForceMode2D.Impulse);
+    }
+
+    protected virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -332,6 +339,9 @@ public class CharacterMachine : MonoBehaviour, Hp
 
     public void DepleteHp(object subject, float amount)
     {
+        if (isInvincible)
+            return;
+
         if (amount <= 0)
             return;
 
