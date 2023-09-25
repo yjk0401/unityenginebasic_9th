@@ -193,9 +193,9 @@ MonoBehaviour:
   _wallMask:
     serializedVersion: 2
     m_Bits: 0
-  _hpMax: 100
-  _attackForceMin: 100
-  _attackForceMax: 120
+  _hpMax: 200
+  _attackForceMin: 10
+  _attackForceMax: 12
   _ai: 0
   _autoFollow: 1
   _targetDetectRange: 1.5
@@ -1518,8 +1518,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _hpMax: 500
-  _attackForceMin: 20
-  _attackForceMax: 30
+  _attackForceMin: 100
+  _attackForceMax: 120
 --- !u!1 &862653486
 GameObject:
   m_ObjectHideFlags: 0
