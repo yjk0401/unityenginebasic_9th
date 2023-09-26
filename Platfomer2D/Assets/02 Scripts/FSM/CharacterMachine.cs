@@ -42,7 +42,7 @@ public class CharacterMachine : MonoBehaviour, Hp
 
             if (value > 0)
             {
-                transform.eulerAngles = Vector3.up * 0.0f;
+                transform.eulerAngles = Vector3.zero;
                 _direction = DIRECTION_RIGHT;
             }
 
@@ -56,10 +56,12 @@ public class CharacterMachine : MonoBehaviour, Hp
             else
                 throw new System.Exception("[CharacterMachine] : Invalid direction (0).");
 
+            onDirectionChanged?.Invoke(_direction);
         }
     }
     private int _direction = DIRECTION_RIGHT;
     [HideInInspector] public bool isDirectionChangeable;
+    public event Action<int> onDirectionChanged;
     public const int DIRECTION_RIGHT = 1;
     public const int DIRECTION_LEFT = -1;
     public const int DIRECTION_UP = 1;

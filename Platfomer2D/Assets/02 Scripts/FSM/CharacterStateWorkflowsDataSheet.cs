@@ -985,8 +985,15 @@ public static class CharacterStateWorkflowsDataSheet
             {
                 foreach (var target in _targets) 
                 {
-                    target.DepleteHp(machine, Random.Range(machine._attackForceMin, machine._attackForceMax) * _attackSettings[_combo - 1].damageGain);
+                    if (target == null)
+                        continue;
+
+                    float damage = Random.Range(machine._attackForceMin, machine._attackForceMax) * _attackSettings[_combo - 1].damageGain;
+                    target.DepleteHp(machine, damage);
                     target.KnockBack(new Vector2(machine.direction, 0.0f));
+                    DamagePopUp.Create(target.transform.position + Vector3.up * 0.5f,
+                                       (int)damage,
+                                       machine.gameObject.layer);
                 }
                 _hasHit = true;
             };
@@ -1286,6 +1293,7 @@ public static class CharacterStateWorkflowsDataSheet
             machine.isMovable = false;
             machine.move = Vector2.zero;
             rigidbody.velocity = Vector2.zero;
+            machine.isInvincible = true;
             animator.Play("Die");
         }
 

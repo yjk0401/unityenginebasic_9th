@@ -126,7 +126,8 @@ public class EnemyMachine : CharacterMachine
                     if (_attackEnable &&
                         Vector2.Distance(transform.position, _target.position) <= _attackRange)
                     {
-                        ChangeState(State.Attack);
+
+                            ChangeState(State.Attack);
                     }
                     else 
                     {
@@ -164,9 +165,13 @@ public class EnemyMachine : CharacterMachine
             {
                 if (target.isInvincible == false) 
                 {
-                    target.DepleteHp(this, Random.Range(_attackForceMin, _attackForceMax));
+                    float damage = Random.Range(_attackForceMin, _attackForceMax);
+                    target.DepleteHp(this, damage);
                     Vector2 knockBackForce = new Vector2((target.transform.position - transform.position).normalized.x, 1.0f);
                     target.KnockBack(knockBackForce);
+                    DamagePopUp.Create(target.transform.position + Vector3.up * 0.5f,
+                                       (int)damage,
+                                       gameObject.layer);
                 }
             }
         }
