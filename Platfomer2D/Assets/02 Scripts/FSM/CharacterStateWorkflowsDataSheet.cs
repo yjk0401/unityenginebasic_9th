@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
@@ -951,6 +952,9 @@ public static class CharacterStateWorkflowsDataSheet
         private bool _hasHit;
         private AnimatorEvents _animatorEvents;
 
+        private float _criticalDamage = 0.0f;
+        
+
         public class AttackSetting 
         {
             public Vector2 center;
@@ -988,13 +992,16 @@ public static class CharacterStateWorkflowsDataSheet
                     if (target == null)
                         continue;
 
-                    float damage = Random.Range(machine._attackForceMin, machine._attackForceMax) * _attackSettings[_combo - 1].damageGain;
+                    float damage = Random.Range(machine._attackForceMin, machine._attackForceMax) * _attackSettings[_combo - 1].damageGain 
+                                                * (1 +_criticalDamage);
                     target.DepleteHp(machine, damage);
                     target.KnockBack(new Vector2(machine.direction, 0.0f));
                     DamagePopUp.Create(target.transform.position + Vector3.up * 0.5f,
                                        (int)damage,
                                        machine.gameObject.layer);
                 }
+                _criticalDamage = 0.0f;
+                machine.hitCritical = false;
                 _hasHit = true;
             };
         }
@@ -1004,6 +1011,15 @@ public static class CharacterStateWorkflowsDataSheet
             base.OnEnter(parameters);
             machine.isDirectionChangeable = false;
             machine.isMovable = false;
+
+            float trycritical = Random.Range(0.0f, 100.0f);
+
+            if (trycritical > machine.criticalPer) 
+            {
+                _criticalDamage = machine.criticlaDamageSet;
+                machine.hitCritical = true;
+            }
+
 
             if (machine.isGrounded) 
             {
@@ -1305,19 +1321,6 @@ public static class CharacterStateWorkflowsDataSheet
             {
                 return ID;
             }
-
-            switch (current)
-            {
-                default:
-                    {
-                        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 2.0f) 
-                        {
-                            GameObject.Destroy(machine.gameObject);
-                        }
-                    }
-                    break;
-            }
-
             return next;
         }
     }

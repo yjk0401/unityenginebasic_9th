@@ -1,12 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Net.NetworkInformation;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class EnemyMachine : CharacterMachine
 {
-    private enum AI 
+    public enum AI 
     {
         None,
         Think,
@@ -14,6 +11,15 @@ public class EnemyMachine : CharacterMachine
         WaitUtilRandomBehaviourFinihed,
         Follow,
     }
+
+    public AI ai 
+    {
+        get => _ai;
+
+        set => _ai = value;
+        
+    }
+
     [SerializeField] private AI _ai;
     private Transform _target;
     private List<State> _aiBehaviours 

@@ -352,6 +352,11 @@ public class CharacterMachine : MonoBehaviour, Hp
         ChangeState(State.Hurt);
     }
 
+    //Critical
+    public float criticalPer;
+    public float criticlaDamageSet;
+    public bool hitCritical;
+
     protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
