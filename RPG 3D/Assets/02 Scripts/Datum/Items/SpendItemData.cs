@@ -5,6 +5,7 @@ public class SpendItemData : UsableItemData
 {
     public override void Use()
     {
+        
     }
 
     public override void Use(int slotIndex)
