@@ -7037,7 +7037,7 @@ Transform:
   m_GameObject: {fileID: 1213270681761003}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130.88, y: 20, z: 84.24}
+  m_LocalPosition: {x: 108.21, y: 21.64, z: 81.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11071,9 +11071,9 @@ Animator:
   m_GameObject: {fileID: 1213270681761003}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 65b6cdbae3b2373419fe1b942c1c77ba, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 65e27d16389727941a3559b1cd86a891, type: 2}
   m_CullingMode: 1
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -12898,32 +12898,20 @@ MonoBehaviour:
   collisionColor: {r: 1, g: 0, b: 0, a: 1}
   groundCollisionColor: {r: 0, g: 1, b: 0, a: 1}
   angleLimitDrawScale: 0.05
---- !u!143 &114391641196510804
-CharacterController:
+--- !u!114 &114391641196510804
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213270681761003}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd1cddf90846864ea2a44a7b91198fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateLayerMaskData: {fileID: 11400000, guid: 5973dc18efec5c2468fc3545b5b82248,
+    type: 2}
 --- !u!114 &114400231155990291
 MonoBehaviour:
   m_ObjectHideFlags: 0
