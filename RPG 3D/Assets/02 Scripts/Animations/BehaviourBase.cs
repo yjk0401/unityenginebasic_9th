@@ -13,10 +13,13 @@ public enum AnimatorLayer
 
 public class BehaviourBase : StateMachineBehaviour
 {
+    public State State;
+    protected CharacterController controller;
     private StateLayerMaskData _stateLayerMaskData;
 
-    public virtual void Init(StateLayerMaskData stateLayerMaskData) 
+    public virtual void Init(CharacterController controller, StateLayerMaskData stateLayerMaskData) 
     {
+        this.controller = controller;
         _stateLayerMaskData = stateLayerMaskData;
     }
 
@@ -24,7 +27,9 @@ public class BehaviourBase : StateMachineBehaviour
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
+        controller.states[layerIndex] = State;
         animator.SetBool($"dirty{(AnimatorLayer)(1 << layerIndex)}", false);
+        Debug.Log($"dirty{(AnimatorLayer)(1 << layerIndex)} -> false");
     }
 
     protected void ChangeState(Animator animator, State newState) 
@@ -40,7 +45,9 @@ public class BehaviourBase : StateMachineBehaviour
 
             if ((layer & _stateLayerMaskData.animatorLayerPairs[newState]) > 0)
             {
-                animator.SetBool($"dirty{layer}", true);
+                if (controller.states[layerIndex] != newState)
+                    animator.SetBool($"dirty{layer}", true);
+
                 animator.SetLayerWeight(layerIndex, 1.0f);
             }
             else 

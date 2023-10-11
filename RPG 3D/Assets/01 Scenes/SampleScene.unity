@@ -7037,7 +7037,7 @@ Transform:
   m_GameObject: {fileID: 1213270681761003}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.21, y: 21.64, z: 81.35}
+  m_LocalPosition: {x: 107.67, y: 20.24, z: 81.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12910,8 +12910,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd1cddf90846864ea2a44a7b91198fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  states: 
   _stateLayerMaskData: {fileID: 11400000, guid: 5973dc18efec5c2468fc3545b5b82248,
     type: 2}
+  comboResetTimer: 0
+  isComboAvailable: 0
+  comboMax: 0
+  comboStack: 0
 --- !u!114 &114400231155990291
 MonoBehaviour:
   m_ObjectHideFlags: 0
