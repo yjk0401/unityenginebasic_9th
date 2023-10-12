@@ -29,7 +29,6 @@ public class BehaviourBase : StateMachineBehaviour
         base.OnStateEnter(animator, stateInfo, layerIndex);
         controller.states[layerIndex] = State;
         animator.SetBool($"dirty{(AnimatorLayer)(1 << layerIndex)}", false);
-        Debug.Log($"dirty{(AnimatorLayer)(1 << layerIndex)} -> false");
     }
 
     protected void ChangeState(Animator animator, State newState) 
