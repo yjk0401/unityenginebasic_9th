@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-27T10:28:58.059Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="ZR1qzuRVQpSRfFTFvI3m" version="22.0.8" type="device">
+<mxfile host="app.diagrams.net" modified="2023-10-30T09:58:51.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="9rs90yYTVYdwQKlOumRP" version="22.0.8" type="device">
   <diagram name="페이지-1" id="hdjbhopYSdk3RlSoOf6J">
-    <mxGraphModel dx="629" dy="1795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -939,16 +939,16 @@
         <mxCell id="QxsnMme4ErrsoJoP5w_W-7" value="Name" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="921" y="921.5" width="139" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8hvPQt4pKzFjzbPoYoWv-1" value="Condition /&amp;nbsp; Cost" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8hvPQt4pKzFjzbPoYoWv-1" value="Condition /&amp;nbsp; Cost" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="1122" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8hvPQt4pKzFjzbPoYoWv-2" value="Effect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8hvPQt4pKzFjzbPoYoWv-2" value="Effect" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="1140" width="200" height="61" as="geometry" />
         </mxCell>
-        <mxCell id="8hvPQt4pKzFjzbPoYoWv-3" value="Condition /&amp;nbsp; Cost" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8hvPQt4pKzFjzbPoYoWv-3" value="Condition /&amp;nbsp; Cost" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="920" y="1123" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="8hvPQt4pKzFjzbPoYoWv-4" value="Effect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="8hvPQt4pKzFjzbPoYoWv-4" value="Effect" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="921" y="1140" width="200" height="61" as="geometry" />
         </mxCell>
       </root>
