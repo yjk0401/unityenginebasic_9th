@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2023-12-29T10:27:02.444Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ZskuwHn0--hysBTF9Q-F" version="22.1.15" type="device">
+  <diagram name="페이지-1" id="HT2ZYHp-m8J1DdYzcqwB">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VuvzZOO7hSyksdSClTp7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-1" target="VuvzZOO7hSyksdSClTp7-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-1" value="시작" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-2" target="VuvzZOO7hSyksdSClTp7-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-2" value="능력치 상승" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="400" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-3" target="VuvzZOO7hSyksdSClTp7-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-3" target="VuvzZOO7hSyksdSClTp7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-3" value="경지가 상승 했는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-4" target="VuvzZOO7hSyksdSClTp7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-4" value="경지 상승 능력치 상승" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-14" target="VuvzZOO7hSyksdSClTp7-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-14" value="능력치 한계 상승" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-16" target="VuvzZOO7hSyksdSClTp7-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-16" value="레벨 업 연출 발생" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-17" target="VuvzZOO7hSyksdSClTp7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-17" value="레벨 상승" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="VuvzZOO7hSyksdSClTp7-19" target="VuvzZOO7hSyksdSClTp7-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-19" value="레벨 업&amp;nbsp; log" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VuvzZOO7hSyksdSClTp7-22" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
