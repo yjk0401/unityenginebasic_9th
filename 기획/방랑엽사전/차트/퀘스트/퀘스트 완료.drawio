@@ -1,0 +1,172 @@
+<mxfile host="app.diagrams.net" modified="2024-01-16T09:25:24.209Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="W2dmxhsBL0ojX4yaYcF0" version="22.1.18" type="device">
+  <diagram name="페이지-1" id="hnifJjpWj3-rXOwqnkaf">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-1" target="oNiJCIFRUGgsVKsrqzoo-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-1" value="수동 퀘스트 완료&lt;br&gt;시작" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-2" target="oNiJCIFRUGgsVKsrqzoo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-2" target="oNiJCIFRUGgsVKsrqzoo-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-2" value="완료 조건1&lt;br&gt;만족" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-3" target="oNiJCIFRUGgsVKsrqzoo-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-3" target="oNiJCIFRUGgsVKsrqzoo-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-3" value="완료 조건 2&lt;br&gt;만족" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-4" target="oNiJCIFRUGgsVKsrqzoo-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-4" target="oNiJCIFRUGgsVKsrqzoo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-4" value="완료 조건 3&lt;br&gt;만족" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-5" value="종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-15" target="oNiJCIFRUGgsVKsrqzoo-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-15" target="oNiJCIFRUGgsVKsrqzoo-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-15" value="인벤토리에 &lt;br&gt;보상을 받을&lt;br&gt;공간이 있는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-17" target="oNiJCIFRUGgsVKsrqzoo-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-17" value="퀘스트 완료 보류" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-21" target="oNiJCIFRUGgsVKsrqzoo-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="940" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-21" value="퀘스트 완료" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="840" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-23" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry y="960" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-26" target="oNiJCIFRUGgsVKsrqzoo-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-26" value="&#39;인벤토리에 공간이 없습니다&#39;&lt;br&gt;텍스트 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-29" target="oNiJCIFRUGgsVKsrqzoo-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-29" value="퀘스트 완료 NPC, 오브젝트&lt;br&gt;상호작용" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-32" target="oNiJCIFRUGgsVKsrqzoo-35" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-32" value="자동 퀘스트 완료&lt;br&gt;시작" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="400" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-35" target="oNiJCIFRUGgsVKsrqzoo-38" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-35" target="oNiJCIFRUGgsVKsrqzoo-42" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-35" value="완료 조건1&lt;br&gt;만족" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-38" target="oNiJCIFRUGgsVKsrqzoo-41" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-38" target="oNiJCIFRUGgsVKsrqzoo-42" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-38" value="완료 조건 2&lt;br&gt;만족" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-41" target="oNiJCIFRUGgsVKsrqzoo-42" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-41" target="oNiJCIFRUGgsVKsrqzoo-45" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-41" value="완료 조건 3&lt;br&gt;만족" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-42" value="종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-45" target="oNiJCIFRUGgsVKsrqzoo-52" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-45" target="oNiJCIFRUGgsVKsrqzoo-49" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-45" value="인벤토리에 &lt;br&gt;보상을 받을&lt;br&gt;공간이 있는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-47" target="oNiJCIFRUGgsVKsrqzoo-42" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-47" value="퀘스트 완료 보류" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-49" target="oNiJCIFRUGgsVKsrqzoo-58" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-49" value="보상 지급" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-50" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="400" y="840" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" source="oNiJCIFRUGgsVKsrqzoo-52" target="oNiJCIFRUGgsVKsrqzoo-47" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-52" value="&#39;인벤토리에 공간이 없습니다&#39;&lt;br&gt;텍스트 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-55" target="oNiJCIFRUGgsVKsrqzoo-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-55" value="보상 지급" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="720" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="oNiJCIFRUGgsVKsrqzoo-58" target="oNiJCIFRUGgsVKsrqzoo-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oNiJCIFRUGgsVKsrqzoo-58" value="퀘스트 완료" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="720" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
