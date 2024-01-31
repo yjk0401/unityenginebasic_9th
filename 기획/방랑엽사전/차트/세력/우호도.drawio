@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" modified="2024-01-31T10:31:48.722Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Hu_vqOTKARJfmX26C1Qt" version="23.0.2" type="device">
+  <diagram name="페이지-1" id="6ny7G-wBdI0WkExMJoKt">
+    <mxGraphModel dx="1647" dy="877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-1" target="W_3yK2LJsabxaK8Z3qP2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-1" value="세력 우호도 &lt;br&gt;NPC 반응&lt;br&gt;시작" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-3" target="W_3yK2LJsabxaK8Z3qP2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-3" target="W_3yK2LJsabxaK8Z3qP2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-3" value="적대 상태인가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-4" target="W_3yK2LJsabxaK8Z3qP2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-4" value="PC 접촉" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-8" target="W_3yK2LJsabxaK8Z3qP2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-8" value="NPC 경계 상태로 변경" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-10" target="W_3yK2LJsabxaK8Z3qP2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-10" target="W_3yK2LJsabxaK8Z3qP2-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-10" value="PC에게 공격을 받았는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-11" target="W_3yK2LJsabxaK8Z3qP2-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-11" target="W_3yK2LJsabxaK8Z3qP2-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-11" value="PC에게 공격을 받았는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-14" target="W_3yK2LJsabxaK8Z3qP2-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-14" value="PC를 공격한다" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-15" target="W_3yK2LJsabxaK8Z3qP2-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-15" target="W_3yK2LJsabxaK8Z3qP2-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-15" value="전투가 30초 이상 &lt;br&gt;지속 됐는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="720" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-17" target="W_3yK2LJsabxaK8Z3qP2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-17" value="동료 NPC 호출" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-20" value="종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="800" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-21" target="W_3yK2LJsabxaK8Z3qP2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-21" value="30초 동안 경계 상태가 된다." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-27" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="160" y="960" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-31" target="W_3yK2LJsabxaK8Z3qP2-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-31" target="W_3yK2LJsabxaK8Z3qP2-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-31" value="동료를 호출 했는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="720" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-35" target="W_3yK2LJsabxaK8Z3qP2-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="W_3yK2LJsabxaK8Z3qP2-35" target="W_3yK2LJsabxaK8Z3qP2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W_3yK2LJsabxaK8Z3qP2-35" value="전투가 종료 됐는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="840" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
