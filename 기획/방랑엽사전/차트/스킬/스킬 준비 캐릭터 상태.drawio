@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2024-02-20T09:31:25.810Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="VYdxXZLFBpDJr8P2lz9E" version="23.1.5" type="device">
+  <diagram name="페이지-1" id="qyX0I4Be-70Mgq33KLnO">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-1" target="izK8MYyO_MAjzfHvyeDJ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-1" value="스킬 준비 단계&lt;br&gt;1. 캐릭터 상태&lt;br&gt;시작" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-2" target="izK8MYyO_MAjzfHvyeDJ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-2" target="izK8MYyO_MAjzfHvyeDJ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-2" value="캐릭터가 &lt;br&gt;&#39;상태 이상&#39;에 &lt;br&gt;걸려 있는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-3" target="izK8MYyO_MAjzfHvyeDJ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-3" target="izK8MYyO_MAjzfHvyeDJ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-3" value="캐릭터가&lt;br&gt;&#39;액션&#39;을&lt;br&gt;하고 있는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-7" value="스킬 준비 단계&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2. 스킬 아이템" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-9" target="izK8MYyO_MAjzfHvyeDJ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-9" target="izK8MYyO_MAjzfHvyeDJ-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="520" />
+              <mxPoint x="580" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-9" value="스킬을 &lt;br&gt;시전할 수 없는 &lt;br&gt;&#39;액션&#39;인가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-12" target="izK8MYyO_MAjzfHvyeDJ-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-12" target="izK8MYyO_MAjzfHvyeDJ-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="160" />
+              <mxPoint x="580" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-12" value="모든 동작을 &lt;br&gt;제한하는&lt;br&gt;&#39;상태 이상&#39;인가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-13" target="izK8MYyO_MAjzfHvyeDJ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-13" target="izK8MYyO_MAjzfHvyeDJ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-13" value="시전하는 스킬이&amp;nbsp;&lt;br&gt;이동을 동반하는가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-14" target="izK8MYyO_MAjzfHvyeDJ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-14" target="izK8MYyO_MAjzfHvyeDJ-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="280" />
+              <mxPoint x="580" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-14" value="스킬의 시전을 &lt;br&gt;제한하는&lt;br&gt;&#39;상태 이상&#39;인가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-15" target="izK8MYyO_MAjzfHvyeDJ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#990000;strokeWidth=2;" edge="1" parent="1" source="izK8MYyO_MAjzfHvyeDJ-15" target="izK8MYyO_MAjzfHvyeDJ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-15" value="이동을 &lt;br&gt;동반하는 스킬을 &lt;br&gt;제한하는 &lt;br&gt;&#39;상태 이상&#39;인가" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="izK8MYyO_MAjzfHvyeDJ-17" value="종료" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
