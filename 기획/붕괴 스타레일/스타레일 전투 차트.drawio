@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-22T20:11:18.677Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="45omxqSOH8pejEczHdWH" version="24.2.8" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-23T10:27:28.948Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="CcZgB_Uw5kakHa_Rvmcq" version="24.2.8" type="device">
   <diagram name="페이지-1" id="MwEd6E1gdcDkhidKaNLA">
-    <mxGraphModel dx="575" dy="1791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="956" dy="1684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -399,17 +399,95 @@
         <mxCell id="mLf6HGWY5bgr3WRdns5o-25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;비술 포인트 부족 텍스트 출력&lt;/font&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontStyle=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="2240" y="120" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="EYBZ8fStY4sKx3saozDM-3" value="선제 공격" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2680" y="200" width="159" height="80" as="geometry" />
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=10;fontStyle=1" edge="1" source="sNPL55ozYYwPPlFU79Cu-2" target="sNPL55ozYYwPPlFU79Cu-4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EYBZ8fStY4sKx3saozDM-4" value="피습" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2680" y="320" width="159" height="80" as="geometry" />
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-2" value="캐릭터 턴&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="EYBZ8fStY4sKx3saozDM-5" value="몬스터에게 공격" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2481" y="200" width="159" height="80" as="geometry" />
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-4" target="sNPL55ozYYwPPlFU79Cu-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EYBZ8fStY4sKx3saozDM-6" value="몬스터 공격" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2481" y="320" width="159" height="80" as="geometry" />
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-4" target="sNPL55ozYYwPPlFU79Cu-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-4" value="핸재 행동 수치&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;= 0?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-6" value="대기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-9" value="아군/적 분류" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-37" target="sNPL55ozYYwPPlFU79Cu-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-37" value="PC 행동" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="920" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-38" value="PC 행동" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="860" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" source="sNPL55ozYYwPPlFU79Cu-41" target="sNPL55ozYYwPPlFU79Cu-38" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" source="sNPL55ozYYwPPlFU79Cu-41" target="sNPL55ozYYwPPlFU79Cu-42" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-41" value="아군?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-42" value="몬스터 행동" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="800" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-45" target="sNPL55ozYYwPPlFU79Cu-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-45" value="아군/적 분류" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="740" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-49" target="sNPL55ozYYwPPlFU79Cu-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-49" target="sNPL55ozYYwPPlFU79Cu-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-49" value="전투 스킬&lt;div&gt;포인트 사용?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="980" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-51" target="sNPL55ozYYwPPlFU79Cu-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-51" target="sNPL55ozYYwPPlFU79Cu-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-51" value="전투 스킬 포인트&lt;div&gt;보유?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="980" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-52" target="sNPL55ozYYwPPlFU79Cu-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-52" value="전투 스킬 사용?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="1040" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-53" target="sNPL55ozYYwPPlFU79Cu-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-53" value="기본 공격" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" y="1040" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;strokeColor=#990000;" edge="1" parent="1" source="sNPL55ozYYwPPlFU79Cu-59" target="sNPL55ozYYwPPlFU79Cu-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-59" value="전투 스킬 포인트&lt;div&gt;최대?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" y="1100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-63" value="전투 스킬 포인트 1 회복" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="1100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sNPL55ozYYwPPlFU79Cu-71" value="PC 행동" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeWidth=2;fontSize=10;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" y="1160" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
