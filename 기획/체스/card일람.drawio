@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
   <diagram name="페이지-1" id="kGjD0E1fZiW_DPpfhViz">
-    <mxGraphModel dx="1226" dy="1681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1330" dy="1594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1131,7 +1131,7 @@
         <mxCell id="wk9F9ZLmu2nVow1BNJd_-2" value="카드 일람 버튼 클릭" style="rhombus;html=1;strokeWidth=2;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="-800" y="3040" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="wk9F9ZLmu2nVow1BNJd_-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="wk9F9ZLmu2nVow1BNJd_-3" target="wk9F9ZLmu2nVow1BNJd_-6" edge="1">
+        <mxCell id="TX3gHX9VjY3rerQw1qOW-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeWidth=2;" parent="1" source="wk9F9ZLmu2nVow1BNJd_-3" target="TX3gHX9VjY3rerQw1qOW-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wk9F9ZLmu2nVow1BNJd_-3" value="카드 일람 시스템 관련 UI 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
@@ -1149,26 +1149,14 @@
         <mxCell id="wk9F9ZLmu2nVow1BNJd_-5" value="카드 데이터 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-800" y="3100" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="wk9F9ZLmu2nVow1BNJd_-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="wk9F9ZLmu2nVow1BNJd_-6" target="wk9F9ZLmu2nVow1BNJd_-7" edge="1">
+        <mxCell id="TX3gHX9VjY3rerQw1qOW-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeWidth=2;" parent="1" source="wk9F9ZLmu2nVow1BNJd_-32" target="TX3gHX9VjY3rerQw1qOW-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wk9F9ZLmu2nVow1BNJd_-6" value="카드 등급 UI 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="-800" y="3160" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="BTmS6HN_DXlQInak9E1O-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeWidth=2;" edge="1" parent="1" source="wk9F9ZLmu2nVow1BNJd_-7" target="wk9F9ZLmu2nVow1BNJd_-32">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="wk9F9ZLmu2nVow1BNJd_-7" value="카드 기본 정렬 규칙 적용" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
+        <mxCell id="wk9F9ZLmu2nVow1BNJd_-32" value="UI 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=2;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-800" y="3190" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="wk9F9ZLmu2nVow1BNJd_-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="wk9F9ZLmu2nVow1BNJd_-32" target="wk9F9ZLmu2nVow1BNJd_-34" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="wk9F9ZLmu2nVow1BNJd_-32" value="카드 일람 시스템UI 출력 후&lt;div&gt;카드 정렬 후 출력&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=2;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="-800" y="3220" width="120" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="wk9F9ZLmu2nVow1BNJd_-34" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="-800" y="3260" width="120" height="20" as="geometry" />
+          <mxGeometry x="-800" y="3250" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="21iIML9AyuOEAxgYn2CC-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;" parent="1" source="21iIML9AyuOEAxgYn2CC-1" target="21iIML9AyuOEAxgYn2CC-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1211,6 +1199,20 @@
         </mxCell>
         <mxCell id="21iIML9AyuOEAxgYn2CC-11" value="조건을 모두 만족하는 카드 확인" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-520" y="3100" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TX3gHX9VjY3rerQw1qOW-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeWidth=2;" parent="1" source="TX3gHX9VjY3rerQw1qOW-1" target="wk9F9ZLmu2nVow1BNJd_-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-740" y="3190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TX3gHX9VjY3rerQw1qOW-1" value="카드 기본 정렬 규칙 적용" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-800" y="3160" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TX3gHX9VjY3rerQw1qOW-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;strokeWidth=2;" parent="1" source="TX3gHX9VjY3rerQw1qOW-4" target="wk9F9ZLmu2nVow1BNJd_-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TX3gHX9VjY3rerQw1qOW-4" value="카드 정렬 후 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=2;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="-800" y="3220" width="120" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
