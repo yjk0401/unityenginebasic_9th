@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
   <diagram name="페이지-1" id="kGjD0E1fZiW_DPpfhViz">
-    <mxGraphModel dx="2172" dy="1607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="1682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1264,71 +1264,220 @@
         <mxCell id="KCKeOEeLFk3BOrHYTck4-29" value="&lt;div&gt;필터 설정창에 적용&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;버튼&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;클릭&lt;/span&gt;&lt;/div&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-1240" y="3000" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="KCKeOEeLFk3BOrHYTck4-33" value="카드 필터 설정&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="-1400" y="3200" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="KCKeOEeLFk3BOrHYTck4-34" value="카드 종류 항목(대)&lt;div&gt;활성화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" parent="1" vertex="1">
-          <mxGeometry x="-1400" y="3240" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-1" value="등급 항목(대)&lt;div&gt;활성화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="3300" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-2" value="종족/소속 항목(대)&lt;div&gt;활성화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="3360" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-3" value="기물 능력치 항목(대)&lt;div&gt;활성화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="3420" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-4" value="스킬 사거리 항목(대)&lt;div&gt;활성화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="3480" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-5" value="고유 키워드 항목(대)&lt;div&gt;활성화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="3540" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-6" target="SY6DaryOf4--nYnyApi0-8">
+        <mxCell id="SY6DaryOf4--nYnyApi0-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SY6DaryOf4--nYnyApi0-6" target="SY6DaryOf4--nYnyApi0-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-6" value="카드 필터 항목(대)&lt;div&gt;활성화/비활성화&lt;div&gt;시작&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-6" value="카드 필터 항목(대)&lt;div&gt;활성화/비활성화&lt;div&gt;시작&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="3360" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-7" target="SY6DaryOf4--nYnyApi0-13">
+        <mxCell id="SY6DaryOf4--nYnyApi0-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SY6DaryOf4--nYnyApi0-7" target="SY6DaryOf4--nYnyApi0-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-7" target="SY6DaryOf4--nYnyApi0-9">
+        <mxCell id="SY6DaryOf4--nYnyApi0-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" parent="1" source="SY6DaryOf4--nYnyApi0-7" target="SY6DaryOf4--nYnyApi0-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-7" value="항목(대) 비활성화 상태?" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-7" value="항목(대) 비활성화 상태?" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="3480" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-8" target="SY6DaryOf4--nYnyApi0-7">
+        <mxCell id="SY6DaryOf4--nYnyApi0-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SY6DaryOf4--nYnyApi0-8" target="SY6DaryOf4--nYnyApi0-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-8" value="항목(대) 활성화/비활성화&lt;div&gt;버튼 클릭&lt;/div&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-8" value="항목(대) 활성화/비활성화&lt;div&gt;버튼 클릭&lt;/div&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="3420" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-9" target="SY6DaryOf4--nYnyApi0-18">
+        <mxCell id="SY6DaryOf4--nYnyApi0-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="SY6DaryOf4--nYnyApi0-9" target="SY6DaryOf4--nYnyApi0-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-9" value="해당 항목(대) 비활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-9" value="해당 항목(대) 비활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-1060" y="3490" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-13" target="SY6DaryOf4--nYnyApi0-18">
+        <mxCell id="SY6DaryOf4--nYnyApi0-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SY6DaryOf4--nYnyApi0-13" target="SY6DaryOf4--nYnyApi0-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-13" value="해당 항목(대) 활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-13" value="해당 항목(대) 활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="3540" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SY6DaryOf4--nYnyApi0-18" target="SY6DaryOf4--nYnyApi0-21">
+        <mxCell id="SY6DaryOf4--nYnyApi0-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SY6DaryOf4--nYnyApi0-18" target="SY6DaryOf4--nYnyApi0-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-18" value="필터 설정 임시 저장" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-18" value="필터 설정 임시 저장" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="3580" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-21" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-21" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-1200" y="3630" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="SY6DaryOf4--nYnyApi0-24" value="카드 필터 항목(대)&lt;div&gt;활성화/비활성화&lt;div&gt;시작&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="SY6DaryOf4--nYnyApi0-24" value="카드 필터 항목(대)&lt;div&gt;활성화/비활성화&lt;div&gt;시작&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-920" y="3360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-1" target="bbBqSJmi2i-0pkz3zIV1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-1" value="종족/ 소속 검색 미리보기&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1570" y="3150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-2" target="bbBqSJmi2i-0pkz3zIV1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-2" target="bbBqSJmi2i-0pkz3zIV1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-2" value="검색 창&lt;div&gt;텍스트 변화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1572.5" y="3190" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-4" target="bbBqSJmi2i-0pkz3zIV1-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-4" value="종족/소속 DB에 해당 텍스트를 포함하는 데이터 검색" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1580" y="3230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-6" target="bbBqSJmi2i-0pkz3zIV1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-6" value="검색된 데이터&lt;div&gt;미리보기 결과로 출력&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1570" y="3270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-10" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1540" y="3310" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-14" target="bbBqSJmi2i-0pkz3zIV1-17" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-14" value="고유 텍스트 검색 미리보기&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1420" y="3150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-17" target="bbBqSJmi2i-0pkz3zIV1-19" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-17" target="bbBqSJmi2i-0pkz3zIV1-22" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-17" value="검색 창&lt;div&gt;텍스트 변화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1422.5" y="3190" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-19" target="bbBqSJmi2i-0pkz3zIV1-21" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-19" value="고유 텍스트 DB에 해당 텍스트를 포함하는 데이터 검색" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1430" y="3230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-21" target="bbBqSJmi2i-0pkz3zIV1-22" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-21" value="검색된 데이터&lt;div&gt;미리보기 결과로 출력&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1420" y="3270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-22" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1390" y="3310" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-24" target="bbBqSJmi2i-0pkz3zIV1-27" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-24" value="검색 미리보기&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1420" y="3360" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-27" target="bbBqSJmi2i-0pkz3zIV1-29" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" source="bbBqSJmi2i-0pkz3zIV1-27" target="bbBqSJmi2i-0pkz3zIV1-32" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1290" y="3415" />
+              <mxPoint x="-1290" y="3650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-27" value="검색 창&lt;div&gt;텍스트 변화?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1420" y="3400" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-29" target="bbBqSJmi2i-0pkz3zIV1-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-29" value="DB에 해당 텍스트를&lt;div&gt;포함하는 데이터 검색&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1410" y="3440" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-31" target="bbBqSJmi2i-0pkz3zIV1-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-31" value="검색된 데이터&lt;div&gt;미리보기 결과로 출력&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1410" y="3600" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-32" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1390" y="3640" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-35" target="bbBqSJmi2i-0pkz3zIV1-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-35" target="bbBqSJmi2i-0pkz3zIV1-39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1300" y="3495" />
+              <mxPoint x="-1300" y="3575" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-35" value="이전 출력된&amp;nbsp;&lt;div&gt;미리보기?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1420" y="3480" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-38" target="bbBqSJmi2i-0pkz3zIV1-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-38" value="이전에 출력된&lt;div&gt;미리보기 삭제&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1405" y="3520" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-39" target="bbBqSJmi2i-0pkz3zIV1-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-39" target="bbBqSJmi2i-0pkz3zIV1-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-39" value="일치하는 데이터?" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1420" y="3560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-47" target="bbBqSJmi2i-0pkz3zIV1-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1462" y="3650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-47" value="&#39;일치하는 항목 없음&#39; 텍스트 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1502.5" y="3600" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-54" target="bbBqSJmi2i-0pkz3zIV1-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-54" value="카드 종류 및 등급&lt;div&gt;세부 항목 선택&lt;div&gt;시작&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="3320" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-55" target="bbBqSJmi2i-0pkz3zIV1-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-55" target="bbBqSJmi2i-0pkz3zIV1-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-55" value="활성화된&lt;br&gt;&lt;div&gt;세부 항목?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="3410" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-56" target="bbBqSJmi2i-0pkz3zIV1-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-56" value="모든 세부 항목 비활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="3450" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-57" value="선택한 세부 항목 활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="3480" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-60" target="bbBqSJmi2i-0pkz3zIV1-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="bbBqSJmi2i-0pkz3zIV1-60" target="bbBqSJmi2i-0pkz3zIV1-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-60" value="세부 항목&lt;div&gt;활성화 선택&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-1880" y="3370" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bbBqSJmi2i-0pkz3zIV1-65" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-1850" y="3510" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
