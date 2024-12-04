@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
   <diagram name="페이지-1" id="kGjD0E1fZiW_DPpfhViz">
-    <mxGraphModel dx="5473" dy="1594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5473" dy="1564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3250,149 +3250,285 @@
         <mxCell id="ZrqsNyTrqvM80xF4mz7X-29" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-4430" y="2990" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.227;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="U1M8s3Uljpw5WAk-l6Hv-3" target="U1M8s3Uljpw5WAk-l6Hv-4" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.227;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-3" target="U1M8s3Uljpw5WAk-l6Hv-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-3" value="덱 일람&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-3" value="덱 일람&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-4080" y="2720" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-4" target="U1M8s3Uljpw5WAk-l6Hv-5">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-4" target="U1M8s3Uljpw5WAk-l6Hv-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-4" value="덱 일람 버튼 클릭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-4" value="덱 일람 버튼 클릭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-4080" y="2760" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-5" target="U1M8s3Uljpw5WAk-l6Hv-7">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-5" target="U1M8s3Uljpw5WAk-l6Hv-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-5" value="덱 데이터 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-5" value="덱 데이터 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-4080" y="2800" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-7" target="U1M8s3Uljpw5WAk-l6Hv-9">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-7" target="xE6iDJde7jAo8FmEaLyI-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-7" value="덱 배치 순서 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-7" value="덱 배치 순서 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-4080" y="2830" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-9" target="U1M8s3Uljpw5WAk-l6Hv-15">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-9" target="U1M8s3Uljpw5WAk-l6Hv-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-9" value="덱 배치 순서에 따라 덱&lt;div&gt;배치 및 팝업&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-4080" y="2860" width="120" height="30" as="geometry" />
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-9" value="덱 배치 순서에 따라 덱&lt;div&gt;배치 및 팝업&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="-4080" y="2940" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-15" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="-4080" y="2900" width="120" height="30" as="geometry" />
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-15" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-4080" y="2980" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.227;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="U1M8s3Uljpw5WAk-l6Hv-19" target="U1M8s3Uljpw5WAk-l6Hv-20" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.227;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-19" target="U1M8s3Uljpw5WAk-l6Hv-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-19" value="덱 배치 변경&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-19" value="덱 배치 변경&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2720" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-20" target="U1M8s3Uljpw5WAk-l6Hv-21">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-20" target="U1M8s3Uljpw5WAk-l6Hv-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-20" value="덱 드래그 앤 드롭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-20" value="덱 드래그 앤 드롭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2760" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-21" target="U1M8s3Uljpw5WAk-l6Hv-22">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-21" target="U1M8s3Uljpw5WAk-l6Hv-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-21" value="기존 위치 드롭" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-21" value="기존 위치 드롭" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2800" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-22" target="U1M8s3Uljpw5WAk-l6Hv-24">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-22" target="U1M8s3Uljpw5WAk-l6Hv-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#990000;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-22" target="U1M8s3Uljpw5WAk-l6Hv-25">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#990000;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-22" target="U1M8s3Uljpw5WAk-l6Hv-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-22" value="기존보다&lt;div&gt;앞쪽에 드롭&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-22" value="기존보다&lt;div&gt;앞쪽에 드롭&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="-3670" y="2800" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-24" target="U1M8s3Uljpw5WAk-l6Hv-26">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-24" target="U1M8s3Uljpw5WAk-l6Hv-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-24" value="드롭한 덱 이동 거리만큼&lt;div&gt;배치 순서 감소&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-24" value="드롭한 덱 이동 거리만큼&lt;div&gt;배치 순서 감소&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3670" y="2840" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-25" target="U1M8s3Uljpw5WAk-l6Hv-26">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-25" target="U1M8s3Uljpw5WAk-l6Hv-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-25" value="드롭한 덱 이동 거리만큼&lt;div&gt;배치 순서 증가&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-25" value="드롭한 덱 이동 거리만큼&lt;div&gt;배치 순서 증가&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3540" y="2800" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-26" target="U1M8s3Uljpw5WAk-l6Hv-52">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-26" target="U1M8s3Uljpw5WAk-l6Hv-52" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-3680" y="2895" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-26" value="드롭한 덱보다 뒤쪽에 위치한&lt;div&gt;덱 배치 순서 1 증가&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-26" value="드롭한 덱보다 뒤쪽에 위치한&lt;div&gt;덱 배치 순서 1 증가&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3670" y="2880" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-32" target="U1M8s3Uljpw5WAk-l6Hv-52">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-32" target="U1M8s3Uljpw5WAk-l6Hv-52" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-3740" y="2880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-32" value="기존 배치 순서 유지" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-32" value="기존 배치 순서 유지" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2840" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-21" target="U1M8s3Uljpw5WAk-l6Hv-32">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-21" target="U1M8s3Uljpw5WAk-l6Hv-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-52" target="U1M8s3Uljpw5WAk-l6Hv-39">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-52" target="U1M8s3Uljpw5WAk-l6Hv-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-3740" y="2910" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-39" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-39" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2920" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.227;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="U1M8s3Uljpw5WAk-l6Hv-43" target="U1M8s3Uljpw5WAk-l6Hv-44" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.227;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-43" target="U1M8s3Uljpw5WAk-l6Hv-44" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-43" value="덱 삭제 확인&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-43" value="덱 삭제 확인&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;시작&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2960" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-44" target="U1M8s3Uljpw5WAk-l6Hv-46">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-44" target="U1M8s3Uljpw5WAk-l6Hv-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-44" value="덱 삭제 확인 버튼 클릭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-44" value="덱 삭제 확인 버튼 클릭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="3000" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-46" target="U1M8s3Uljpw5WAk-l6Hv-48">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-46" target="xE6iDJde7jAo8FmEaLyI-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-46" value="선택된 덱 중 가장 배치 순서가&lt;div&gt;낮은 덱 삭제&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-46" value="선택된 덱 중 가장 배치 순서가&lt;div&gt;낮은 덱 삭제&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="-3800" y="3040" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-47" target="U1M8s3Uljpw5WAk-l6Hv-46">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-47" target="U1M8s3Uljpw5WAk-l6Hv-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-47" value="삭제된 덱보다 배치 순서가&lt;div&gt;높은 덱의 배치 순서 1 감소&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="-3670" y="3080" width="120" height="30" as="geometry" />
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-47" value="삭제된 덱보다 배치 순서가&lt;div&gt;높은 덱의 배치 순서 1 감소&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-3670" y="3110" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-48" target="U1M8s3Uljpw5WAk-l6Hv-47">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-48" target="U1M8s3Uljpw5WAk-l6Hv-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-48" target="U1M8s3Uljpw5WAk-l6Hv-53">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-48" target="U1M8s3Uljpw5WAk-l6Hv-53" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-48" value="모든 덱 배치 순서 차이 1" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="-3800" y="3080" width="120" height="30" as="geometry" />
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-48" value="모든 덱 배치 순서 차이 1" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" parent="1" vertex="1">
+          <mxGeometry x="-3800" y="3110" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-52" value="덱 배치 순서에 따라&lt;div&gt;덱&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;재배치&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-52" value="덱 배치 순서에 따라&lt;div&gt;덱&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;재배치&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="-3800" y="2880" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-53" target="U1M8s3Uljpw5WAk-l6Hv-51">
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="U1M8s3Uljpw5WAk-l6Hv-53" target="U1M8s3Uljpw5WAk-l6Hv-51" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-53" value="덱 배치 순서에 따라&lt;div&gt;덱&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;재배치&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-3800" y="3120" width="120" height="30" as="geometry" />
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-53" value="덱 배치 순서에 따라&lt;div&gt;덱&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;재배치&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="-3800" y="3150" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-51" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="-3800" y="3160" width="120" height="30" as="geometry" />
+        <mxCell id="U1M8s3Uljpw5WAk-l6Hv-51" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-3800" y="3190" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-1" target="U1M8s3Uljpw5WAk-l6Hv-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-1" value="배치 순서가 낮은 순으로 덱 배열" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3800" y="3080" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.226;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-3" target="xE6iDJde7jAo8FmEaLyI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-3" value="덱 검색&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="2960" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-4" target="xE6iDJde7jAo8FmEaLyI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-4" value="검색창 입력 텍스트 변화" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3000" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-5" target="xE6iDJde7jAo8FmEaLyI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-5" value="덱 DB 로딩" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3040" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-6" target="xE6iDJde7jAo8FmEaLyI-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-6" value="덱 이름에 검색창 텍스트를&lt;div&gt;포함하는 덱 선별&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3070" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-7" target="xE6iDJde7jAo8FmEaLyI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-7" value="나열된 덱 중 배치 순서가&lt;div&gt;낮은 6개 선별&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3150" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-8" target="xE6iDJde7jAo8FmEaLyI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-8" value="선별된 덱 검색 결과에&lt;div&gt;배치 순서에 따라 배치 및 팝업&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3190" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-9" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3230" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-16" target="xE6iDJde7jAo8FmEaLyI-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-16" target="xE6iDJde7jAo8FmEaLyI-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-16" value="선별된 덱 유무" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-3520" y="3110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-18" target="xE6iDJde7jAo8FmEaLyI-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-3330" y="3245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-18" value="&#39;검색 결과 없음&#39; 텍스트 팝업" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.25;strokeWidth=1;align=center;verticalAlign=middle;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-3390" y="3110" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-22" target="xE6iDJde7jAo8FmEaLyI-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#990000;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-22" target="xE6iDJde7jAo8FmEaLyI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-22" value="덱 최대 생성 숫자 도달" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-4080" y="2860" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-23" target="U1M8s3Uljpw5WAk-l6Hv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-23" value="덱 생성 버튼 배치 순서&lt;div&gt;0 으로 설정하여 배치&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-4080" y="2900" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-24" target="U1M8s3Uljpw5WAk-l6Hv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-24" value="덱 생성 버튼&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;삭제&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-3950" y="2860" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.502;entryY=0.233;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-29" target="xE6iDJde7jAo8FmEaLyI-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-29" value="덱 배치/삭제 모드&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3320" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-31" target="xE6iDJde7jAo8FmEaLyI-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-31" value="덱 배치/삭제 버튼 클릭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;strokeWidth=1;fontStyle=1;fontSize=8;align=center;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-33" target="xE6iDJde7jAo8FmEaLyI-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-33" target="xE6iDJde7jAo8FmEaLyI-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-33" value="이전에 활성화된&lt;div&gt;배치/삭제 모드 유무&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-35" target="xE6iDJde7jAo8FmEaLyI-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-35" value="이전에 활성화된 배치/삭제&lt;div&gt;모드 비활성화&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3490" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-36" target="xE6iDJde7jAo8FmEaLyI-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-36" value="클릭한 배치/삭제 모드 활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3530" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-38" target="xE6iDJde7jAo8FmEaLyI-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-38" target="xE6iDJde7jAo8FmEaLyI-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-38" value="클릭한 모드&lt;div&gt;비활성화 상태?&lt;/div&gt;" style="rhombus;html=1;strokeWidth=1;spacing=2;spacingRight=0;spacingBottom=0;spacingTop=0;fontStyle=1;horizontal=1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xE6iDJde7jAo8FmEaLyI-41" target="xE6iDJde7jAo8FmEaLyI-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-41" value="클릭한 배치/삭제 모드 비활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-4190" y="3400" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xE6iDJde7jAo8FmEaLyI-46" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=8;fontStyle=1;strokeWidth=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-4320" y="3570" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
