@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.10">
+  <diagram name="페이지-1" id="eNrt0McJQWqAFehpu5ot">
+    <mxGraphModel dx="819" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-1" target="YGXb7gwdPCS-VJ9-S1vV-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-1" value="&lt;font&gt;&lt;b&gt;합 승률 계산&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;b&gt;시작&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-2" target="YGXb7gwdPCS-VJ9-S1vV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-2" value="&lt;span&gt;&lt;b&gt;양측의 코인 결과에 따른&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;b&gt;스킬 위력 경우의 수 계산&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-3" target="YGXb7gwdPCS-VJ9-S1vV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-3" value="&lt;span&gt;&lt;b&gt;경우의 수에 따른 확률 계산&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-4" target="YGXb7gwdPCS-VJ9-S1vV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-4" value="&lt;span&gt;&lt;b&gt;합을 이기는 경우의 수 계산&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="190" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-5" target="YGXb7gwdPCS-VJ9-S1vV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-5" value="&lt;span&gt;&lt;b&gt;합을 이기는&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;b&gt;경우의 수 확률 계산&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-6" target="YGXb7gwdPCS-VJ9-S1vV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-6" value="&lt;b&gt;합을 이기는&lt;/b&gt;&lt;div&gt;&lt;b&gt;경우의 수 확률 합산&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="260" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-7" target="YGXb7gwdPCS-VJ9-S1vV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-7" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;b&gt;계산 결과에 따른 승률 출력&lt;/b&gt;&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="300" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-8" value="&lt;b&gt;종료&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="340" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-17" value="&lt;b&gt;완전 승리 확률 계산&lt;/b&gt;&lt;div&gt;&lt;b&gt;시작&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-18" target="YGXb7gwdPCS-VJ9-S1vV-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-18" value="&lt;b&gt;최대 스킬 위력이&lt;/b&gt;&lt;div&gt;&lt;b&gt;나오는 경우의 수 계산&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-19" target="YGXb7gwdPCS-VJ9-S1vV-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-19" value="&lt;b&gt;계산된 경우의 수 확률 계산&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-20" target="YGXb7gwdPCS-VJ9-S1vV-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-20" value="&lt;b&gt;최대 위력으로 모든 합을&lt;/b&gt;&lt;div&gt;&lt;b&gt;승리하는 경우의 수 계산&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="280" y="190" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-21" target="YGXb7gwdPCS-VJ9-S1vV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-21" value="&lt;b&gt;최대 위력으로 모든 합을&lt;/b&gt;&lt;div&gt;&lt;b&gt;승리하는 확률 계산&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-22" target="YGXb7gwdPCS-VJ9-S1vV-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-22" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;b&gt;계산 결과에 따른 승률 출력&lt;/b&gt;&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;size=0.3333333333333333;" vertex="1" parent="1">
+          <mxGeometry x="280" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-23" value="&lt;b&gt;종료&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;spacing=0;align=center;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="280" y="310" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-30" target="YGXb7gwdPCS-VJ9-S1vV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-30" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;b&gt;합 시도 준비&lt;/b&gt;&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="YGXb7gwdPCS-VJ9-S1vV-35" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGXb7gwdPCS-VJ9-S1vV-35" target="YGXb7gwdPCS-VJ9-S1vV-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGXb7gwdPCS-VJ9-S1vV-35" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;b&gt;합 시도 준비&lt;/b&gt;&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
