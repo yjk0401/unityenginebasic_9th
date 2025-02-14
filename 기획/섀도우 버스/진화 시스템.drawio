@@ -1,248 +1,291 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.13">
   <diagram name="페이지-1" id="6uYW-KI6z_F9Z6ZDivfH">
-    <mxGraphModel dx="393" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="k6bUnTlYldHakTgohKNd-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-1" target="k6bUnTlYldHakTgohKNd-2">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-1" target="tNnUEEQOet3Gh9QmCJPA-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-1" value="&lt;font&gt;추종자 진화-1&lt;br&gt;시작&lt;/font&gt;" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="40" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-1" value="추종자 상태창 출력&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-2" target="k6bUnTlYldHakTgohKNd-6">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-2" target="tNnUEEQOet3Gh9QmCJPA-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-2" value="&lt;span&gt;필드 추종자 클릭&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="80" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-2" value="&lt;span style=&quot;&quot;&gt;추종자 클릭&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-4" target="k6bUnTlYldHakTgohKNd-19">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-4" value="&lt;div&gt;&lt;font&gt;진화 가능한 턴&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-weight: normal;&quot;&gt;선공 5턴 이후,&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;후공 4턴 이후&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;추종자를 진화 시키는 것이 가능하다.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;spacing=0;fontStyle=1;fontColor=default;fontSize=7;" vertex="1" parent="1">
+          <mxGeometry x="225" y="120" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-3" target="tNnUEEQOet3Gh9QmCJPA-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-4" value="&lt;span&gt;추종자 설명 출력&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="350" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-5" target="k6bUnTlYldHakTgohKNd-36">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-3" target="tNnUEEQOet3Gh9QmCJPA-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-5" value="&lt;span&gt;진화 버튼 클릭&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="480" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-3" value="&lt;span&gt;&lt;span&gt;진화 가능한 턴?&lt;/span&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-6" target="k6bUnTlYldHakTgohKNd-10">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-5" target="tNnUEEQOet3Gh9QmCJPA-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#990000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-6" target="k6bUnTlYldHakTgohKNd-7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="310" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-5" value="진화 버튼 활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-6" value="&lt;span&gt;추종자 미진화 상태?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="120" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-7" target="k6bUnTlYldHakTgohKNd-4">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-7" target="tNnUEEQOet3Gh9QmCJPA-71">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-7" value="&lt;span&gt;진화 버튼 비활성화&lt;/span&gt;" style="rounded=1;arcSize=0;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="270" y="310" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-9" target="k6bUnTlYldHakTgohKNd-4">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-7" target="tNnUEEQOet3Gh9QmCJPA-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-9" value="&lt;span&gt;진화 버튼 활성화&lt;/span&gt;" style="rounded=1;arcSize=0;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="310" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-7" value="&lt;span&gt;&lt;span&gt;추종자 진화 가능&lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;횟수 1 이상?&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-10" target="k6bUnTlYldHakTgohKNd-14">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-8" target="tNnUEEQOet3Gh9QmCJPA-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-10" target="k6bUnTlYldHakTgohKNd-7">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-8" value="진화 버튼 비활성화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="340" y="315" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-9" target="tNnUEEQOet3Gh9QmCJPA-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-10" value="&lt;span&gt;진화 가능 턴?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="160" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-9" value="&lt;span style=&quot;font-size: 7px;&quot;&gt;&lt;span&gt;추종자 상태창 팝업&lt;/span&gt;&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-12" target="k6bUnTlYldHakTgohKNd-9">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-10" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="440" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-19" target="tNnUEEQOet3Gh9QmCJPA-113">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-12" target="k6bUnTlYldHakTgohKNd-7">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-19" value="상태창에 진화 버튼&lt;div&gt;출력하도록 설정&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-21" target="tNnUEEQOet3Gh9QmCJPA-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-12" value="&lt;span&gt;EP 보유?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="190" y="240" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-21" value="상태창에 진화 가능한 턴 까지 남은 턴을 표기하도록 설정" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="10" y="125" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-14" target="k6bUnTlYldHakTgohKNd-37">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-33" value="&lt;font style=&quot;font-size: 7px;&quot;&gt;진화 관련 텍스트 전문&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 7px; font-weight: normal;&quot;&gt;진화시키고 싶은 카드까지&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 7px; font-weight: normal;&quot;&gt;드래그해 주시기 바랍니다.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=8;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="325" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1" edge="1" source="tNnUEEQOet3Gh9QmCJPA-41" target="tNnUEEQOet3Gh9QmCJPA-42" parent="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-14" target="k6bUnTlYldHakTgohKNd-7">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-41" value="추종자 진화 버튼 클릭&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-42" target="tNnUEEQOet3Gh9QmCJPA-43">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-14" value="&lt;span&gt;이번 턴 EP&lt;/span&gt;&lt;div&gt;&lt;span&gt;진화 미사용?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="200" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-42" value="&lt;span style=&quot;&quot;&gt;진화 버튼 클릭&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="560" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-19" value="종료" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="390" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-29" target="k6bUnTlYldHakTgohKNd-30">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-43" target="tNnUEEQOet3Gh9QmCJPA-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-29" value="&lt;font&gt;추종자 진화-2&lt;br&gt;시작&lt;/font&gt;" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="40" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-30" target="k6bUnTlYldHakTgohKNd-59">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-43" target="tNnUEEQOet3Gh9QmCJPA-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-30" value="진화 구슬 클릭" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="80" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-43" value="진화 버튼 활성화 상태?" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="600" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-31" target="k6bUnTlYldHakTgohKNd-5">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-44" target="tNnUEEQOet3Gh9QmCJPA-46">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-31" value="&lt;font&gt;추종자 진화-1.1&lt;br&gt;시작&lt;/font&gt;" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="440" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-44" value="추종자 상태창 닫기" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="650" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-35" target="k6bUnTlYldHakTgohKNd-47">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-45" target="tNnUEEQOet3Gh9QmCJPA-48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-35" value="추종자 진화" style="rounded=1;arcSize=0;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="560" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-45" value="EP 1 소비" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="740" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-36" target="k6bUnTlYldHakTgohKNd-35">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-46" target="tNnUEEQOet3Gh9QmCJPA-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-36" target="k6bUnTlYldHakTgohKNd-38">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-46" target="tNnUEEQOet3Gh9QmCJPA-48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-36" value="&lt;span&gt;EP 비소비 진화?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="520" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-46" value="EP를 소비하는 진화?" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="690" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-37" target="k6bUnTlYldHakTgohKNd-12">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-48" target="tNnUEEQOet3Gh9QmCJPA-47">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-37" target="k6bUnTlYldHakTgohKNd-9">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-48" value="&lt;span style=&quot;font-size: 7px;&quot;&gt;&lt;b&gt;추종자 진화 연출 출력&lt;/b&gt;&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="780" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-47" target="tNnUEEQOet3Gh9QmCJPA-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-37" value="&lt;span&gt;EP 비소모 진화 가능?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="240" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-47" value="추종자 진화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="820" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-38" target="k6bUnTlYldHakTgohKNd-35">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-55" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="860" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1" edge="1" source="tNnUEEQOet3Gh9QmCJPA-60" target="tNnUEEQOet3Gh9QmCJPA-61" parent="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-38" value="EP 1 소모" style="rounded=1;arcSize=0;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="190" y="520" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-60" value="진화 구슬 드래그&amp;nbsp;&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-47" value="종료" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="80" y="600" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-59" target="k6bUnTlYldHakTgohKNd-60">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-61" target="tNnUEEQOet3Gh9QmCJPA-62">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-59" target="k6bUnTlYldHakTgohKNd-70">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-61" value="&lt;span style=&quot;&quot;&gt;진화 구슬&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;마우스 드래그&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-62" target="tNnUEEQOet3Gh9QmCJPA-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-59" value="&lt;span&gt;진화 가능 턴?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="120" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-60" target="k6bUnTlYldHakTgohKNd-61">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-60" target="k6bUnTlYldHakTgohKNd-71">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-60" value="&lt;span&gt;이번 턴 EP&lt;/span&gt;&lt;div&gt;&lt;span&gt;진화 미사용?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="160" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-61" target="k6bUnTlYldHakTgohKNd-65">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-61" target="k6bUnTlYldHakTgohKNd-67">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-61" value="&lt;span&gt;EP 비소모 진화 가능?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="200" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-65" target="k6bUnTlYldHakTgohKNd-67">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-65" target="k6bUnTlYldHakTgohKNd-72">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-65" value="&lt;span&gt;EP 보유?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="510" y="200" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-67" value="종료" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="240" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-70" target="k6bUnTlYldHakTgohKNd-67">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-70" value="턴 관련 알림 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="620" y="120" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-71" target="k6bUnTlYldHakTgohKNd-67">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-71" value="이번 턴 진화 알림 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="620" y="160" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-72" target="k6bUnTlYldHakTgohKNd-67">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-62" target="tNnUEEQOet3Gh9QmCJPA-91">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="670" y="255" />
+              <mxPoint x="750" y="140" />
+              <mxPoint x="750" y="365" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-72" value="EP 미보유 알림 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="620" y="200" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-62" value="진화 가능한 턴?" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-80" target="k6bUnTlYldHakTgohKNd-81">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-64" target="tNnUEEQOet3Gh9QmCJPA-69">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-80" value="&lt;font&gt;추종자 진화-2.1&lt;br&gt;시작&lt;/font&gt;" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="280" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-81" target="k6bUnTlYldHakTgohKNd-83">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-64" target="tNnUEEQOet3Gh9QmCJPA-84">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-81" value="&lt;font&gt;필드 추종자에게 진화 구슬 드래그 아웃&lt;/font&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="320" width="100" height="40" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-64" value="EP&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;미소비 진화 가능&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;추종자 소환 상태?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="220" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-83" target="k6bUnTlYldHakTgohKNd-90">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-65" target="tNnUEEQOet3Gh9QmCJPA-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-83" target="k6bUnTlYldHakTgohKNd-87">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-65" target="tNnUEEQOet3Gh9QmCJPA-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="190" />
+              <mxPoint x="750" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-65" value="&lt;span&gt;&lt;span&gt;추종자 진화 가능&lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;횟수 1 이상?&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-69" target="tNnUEEQOet3Gh9QmCJPA-85">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-83" value="&lt;span&gt;추종자 미진화 상태?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="370" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-84" target="k6bUnTlYldHakTgohKNd-94">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-69" target="tNnUEEQOet3Gh9QmCJPA-91">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-84" value="추종자 진화" style="rounded=1;arcSize=0;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="450" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-69" value="현재 EP 1 이상?" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="220" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="k6bUnTlYldHakTgohKNd-87" target="k6bUnTlYldHakTgohKNd-84" parent="1">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-70" target="tNnUEEQOet3Gh9QmCJPA-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" source="k6bUnTlYldHakTgohKNd-87" target="k6bUnTlYldHakTgohKNd-89" parent="1">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-70" target="tNnUEEQOet3Gh9QmCJPA-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-87" value="&lt;span&gt;EP 비소비 진화?&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="410" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-70" value="현재 EP 1 이상?" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="230" y="310" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="k6bUnTlYldHakTgohKNd-89" target="k6bUnTlYldHakTgohKNd-84" parent="1">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-71" target="tNnUEEQOet3Gh9QmCJPA-70">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-89" value="EP 1 소모" style="rounded=1;arcSize=0;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="510" y="410" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k6bUnTlYldHakTgohKNd-90" target="k6bUnTlYldHakTgohKNd-94">
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-71" target="tNnUEEQOet3Gh9QmCJPA-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-90" value="진화 상태 관련 일람창 출력" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="510" y="370" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-71" value="대상 추종자 EP&lt;div&gt;미소비 진화 가능?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="310" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k6bUnTlYldHakTgohKNd-94" value="종료" style="rounded=1;arcSize=50;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="490" width="100" height="30" as="geometry" />
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-81" target="tNnUEEQOet3Gh9QmCJPA-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-81" value="&lt;span style=&quot;font-size: 7px;&quot;&gt;&lt;span&gt;진화 관련 텍스트 팝업 출력&lt;/span&gt;&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="310" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-84" target="tNnUEEQOet3Gh9QmCJPA-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-84" value="진화 구슬 푸른 빛으로 발광" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-85" target="tNnUEEQOet3Gh9QmCJPA-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-85" value="진화 구슬 노랑 빛으로 발광" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-91" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="350" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1" edge="1" source="tNnUEEQOet3Gh9QmCJPA-97" target="tNnUEEQOet3Gh9QmCJPA-98" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-97" value="진화 구슬 드래그 아웃&lt;div&gt;시작&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="520" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-98" target="tNnUEEQOet3Gh9QmCJPA-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-98" value="&lt;span style=&quot;&quot;&gt;진화 구슬&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;마우스 드래그 아웃&lt;/span&gt;" style="shape=manualInput;whiteSpace=wrap;html=1;size=13;verticalAlign=bottom;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-99" target="tNnUEEQOet3Gh9QmCJPA-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-99" target="tNnUEEQOet3Gh9QmCJPA-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-99" value="해당 추종자&lt;div&gt;미진화 상태?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="520" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="tNnUEEQOet3Gh9QmCJPA-101" target="tNnUEEQOet3Gh9QmCJPA-106" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-101" value="EP 1 소비" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="519.97" y="700" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="tNnUEEQOet3Gh9QmCJPA-104" target="tNnUEEQOet3Gh9QmCJPA-101" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" source="tNnUEEQOet3Gh9QmCJPA-104" target="tNnUEEQOet3Gh9QmCJPA-106" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-104" value="EP를 소비하는 진화?" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="519.97" y="650" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="tNnUEEQOet3Gh9QmCJPA-106" target="tNnUEEQOet3Gh9QmCJPA-108" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-106" value="&lt;span style=&quot;font-size: 7px;&quot;&gt;&lt;b&gt;추종자 진화 연출 출력&lt;/b&gt;&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="519.97" y="740" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="tNnUEEQOet3Gh9QmCJPA-108" target="tNnUEEQOet3Gh9QmCJPA-109" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-108" value="추종자 진화" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="519.97" y="780" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-109" value="종료" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="519.97" y="820" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-113" target="tNnUEEQOet3Gh9QmCJPA-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#990000;" edge="1" parent="1" source="tNnUEEQOet3Gh9QmCJPA-113" target="tNnUEEQOet3Gh9QmCJPA-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tNnUEEQOet3Gh9QmCJPA-113" value="해당 추종자&lt;div&gt;미진화 상태?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="120" y="210" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
